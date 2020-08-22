@@ -1,0 +1,462 @@
+@import 'utilities.css';
+:root {
+    --primary: #15e6bc;
+    --secondary: #71059c;
+    --ternary: rgb(113, 5, 156, 0.5);
+    --darkText: #313131;
+    --lightText: #e0e0e0;
+    --dimText: #f7f7f7;
+    --pure: #fff;
+}
+
+header {
+    width: 100%;
+    background: var(--dimText);
+    padding: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.brand img {
+    height: 50px;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+.dropdown-btn {
+    padding: 0 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+}
+
+nav button i {
+    color: var(--darkText);
+    font-size: 25px;
+}
+
+.dropdown-content {
+    position: absolute;
+    top:50px;
+    right: 15px;
+    background:#313131;
+    border-radius: 5px;
+    width: 180px;
+    z-index: 1;
+    display: none;
+}
+
+.dropdown-content a {
+    color: var(--pure);
+    padding: 10px 10px;
+    border-bottom: 1px solid #b3b3b3;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 2px;
+}
+.dropdown-content a:nth-last-child(1){
+    border-bottom: none;
+}
+
+.dropdown-content a:hover {
+    background: var(--pure);
+    color: var(--darkText);
+}
+
+.open {
+    display: block;
+}
+
+.S1 {
+    width: 100%;
+    background: var(--darkText);
+    display: flex;
+    justify-content: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 90%, 0 100%);
+}
+
+.S1left {
+    width: 20%;
+}
+
+.S1left img {
+    height: 550px;
+}
+
+.S1right {
+    width: 45%;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.S1right-content {
+    margin-top: 7.5rem;
+}
+
+.S1right-content h2 {
+    color: var(--primary);
+}
+
+.S1right-content div {
+    color: var(--pure);
+    font-size: 34px;
+    word-spacing: 2px;
+    margin: 20px auto;
+}
+
+.S1right-content p {
+    color: var(--pure);
+    margin-bottom: 30px;
+}
+
+.S2 {
+    width: 60%;
+    margin: 6.3rem auto;
+    background: rgba(21, 230, 188, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.S2left {
+    width: 250px;
+    height: fit-content;
+}
+
+.S2left img {
+    width: 100%;
+}
+
+.S2right {
+    width: 100%;
+    padding: 0 80px;
+}
+
+.S2right p {
+    color: var(--secondary);
+    margin: 1.2rem 0 0.5rem;
+}
+
+.S4 {
+    margin: 100px auto;
+    padding: 7rem 0 12rem;
+    text-align: center;
+    /* background with image and overlay on it */
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/camera.png');
+    color: var(--pure);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 86%, 0 100%);
+}
+
+.S4 h1 {
+    padding: 0 20px;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+.S4 p {
+    padding: 0 20px;
+    color: var(--pure);
+    margin-bottom: 2.5rem;
+}
+
+.S5 {
+    margin: 6.3rem 0;
+}
+
+.S5Container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.Sheading {
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 0 20px;
+}
+
+.Sheading+p {
+    text-align: center;
+    font-size: 16px;
+    color: var(--secondary);
+    margin-bottom: 2rem;
+    padding: 0 20px;
+}
+
+.S5slider {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.S5block {
+    text-align: center;
+    padding: 3rem 3rem;
+    border-radius: 5px;
+    background: var(--lightText);
+}
+
+.S5block img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.S5block p {
+    margin: 2rem auto;
+}
+
+.S5sliderdots {
+    margin-top: 1rem;
+}
+
+.S5sliderdots .S5dots {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.S5sliderdots .S5dots button {
+    font-size: 0;
+    width: 5px;
+    height: 5px;
+    margin-right: 0.3rem;
+    background: var(--darkText);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.S5dots li.slick-active button {
+    background: var(--secondary);
+    width: 8px;
+}
+
+.S6 {
+    margin: 6.3rem auto;
+    padding: 0 0 6rem;
+    background: var(--darkText);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 92%, 0 100%);
+}
+
+.S7 {
+    margin: 6.3rem auto;
+    background: var(--lightText);
+}
+
+.S6Container, .S7Container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.S6Container h1 {
+    color: var(--pure);
+}
+
+.S6Container .Sheading+p {
+    color: var(--pure);
+}
+
+.S6card, .S7card {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+    row-gap: 3rem;
+}
+
+.S6box, .S7box {
+    position: relative;
+    border-radius: 5px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.S6box img, .S7box img {
+    width: 100%;
+    height: 100%;
+}
+
+.S6overlay, .S7overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(21, 230, 188, 0.8);
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+}
+
+.S7overlay {
+    background: rgba(113, 5, 156, 0.5);
+}
+
+.S6overlay:hover, .S7overlay:hover {
+    opacity: 1;
+}
+
+.S6overlay:hover h1, .S6overlay:hover a {
+    font-weight: 550;
+    margin: 0.5rem auto;
+    color: var(--darkText);
+}
+
+.S7overlay:hover h1, .S7overlay:hover a {
+    margin: 0.5rem auto;
+    color: var(--pure);
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    padding: 1rem 0 1rem;
+    background: var(--dimText);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .S5slider {
+        width: 60%;
+    }
+    .S6card, .S7card {
+        width: 90%;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .S1 {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 92%, 0 100%);
+    }
+    .S1left {
+        width: 30%;
+    }
+    .S1right {
+        width: 50%;
+        margin-left: 0;
+        ;
+    }
+    .S2 {
+        width: 80%;
+        margin: 4.3rem auto;
+    }
+    .S4 {
+        margin: 4.3rem auto;
+        padding: 5rem 0 7rem;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 92%, 0 100%);
+    }
+    .S5, .S7 {
+        margin: 4.3rem auto;
+    }
+    .S5slider {
+        width: 75%;
+    }
+    .S6 {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 92%, 0 100%);
+        margin: 4.3rem auto;
+    }
+    .S6card, .S7card {
+        width: 93%;
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+    .S6box, .S7box {
+        height: 225px;
+    }
+}
+
+@media (max-width:576px) {
+    .options {
+        display: none;
+    }
+    .dropdown {
+        display: flex;
+    }
+    .S1 {
+        flex-direction: column;
+        padding-bottom: 2rem;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 95%, 0 100%);
+    }
+    .S1left {
+        width: 100%;
+        margin: 0 auto;
+        text-align: right;
+    }
+    .S1right {
+        width: 100%;
+        height: 650px;
+        border: 1px solid red;
+        position: absolute;
+        margin: 0;
+        margin-top: 0;
+        padding: 5.5rem 15px 0;
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+    }
+    .S1right-content div {
+        font-size: 30px;
+    }
+    .S2 {
+        margin: 4rem auto;
+        width: 90%;
+        flex-direction: column;
+    }
+    .S2left img {
+        display: none;
+    }
+    .S2right {
+        padding: 1.5rem 2rem;
+    }
+    .S4 {
+        margin: 4rem auto;
+        padding: 4rem 0 5rem;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 95%, 0 100%);
+    }
+    .S5, .S7 {
+        margin: 4rem auto;
+    }
+    .S5slider {
+        width: 90%;
+    }
+    .S5block{
+        padding: 3rem 1rem;
+    }
+    .S6 {
+        margin: 4rem auto;
+        padding: 0 0 4rem;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 79% 96%, 0 100%);
+    }
+    .S6card, .S7card {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+
+}

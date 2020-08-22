@@ -1,0 +1,325 @@
+:root {
+    --primary: #00aff0;
+    --btnPrimary: rgba(0, 175, 240, 0.7);
+    --secondary: #f7f7f7;
+    --darkSecondary: #e0e0e0;
+    --darkText: #313131;
+    --lightText: #acacac;
+    --pure: #ffffff;
+    --warning: #ff0000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    color: var(--darkText);
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+a {
+    text-transform: capitalize;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+i {
+    font-size: 16px;
+    color: var(--lightText);
+}
+
+button {
+    font-size: 16px;
+}
+
+.modalLoginSignup {
+    /* display: none; */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 60px;
+    z-index: 5;
+    width: 800px;
+    height: fit-content;
+    border-radius: 5px;
+    overflow: auto;
+    background: var(--pure);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+.signup-form, .login-form {
+    padding: 30px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.enroll-header-cover {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.enroll-header-cover i:hover {
+    color: var(--darkText);
+}
+
+.split-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, rgba(0, 175, 240, 0.5) 30%, rgba(0, 0, 255) 100%);
+    /* background: linear-gradient(20deg, rgb(0, 175, 240, 0.8) 40%, rgb(12, 113, 150, 0.9) 100%); */
+
+}
+
+.left-part img {
+    width: 70%;
+    height: 200px;
+    margin: 30px 0;
+}
+
+.left-part h2 {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.alternative {
+    width: 100%;
+    margin: 0 auto 30px;
+}
+
+.alternative button {
+    width: 200px;
+    margin: 30px auto 0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    color: var(--pure);
+}
+
+.alternative i {
+    color: var(--pure);
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.alternative .google {
+    background: #db4a39;
+}
+
+.alternative .google:hover, .alternative .google:hover i {
+    background: var(--pure);
+    font-weight: 500;
+    color: #db4a39;
+}
+
+.alternative .facebook {
+    background: #3b5998;
+}
+
+.alternative .facebook:hover, .alternative .facebook:hover i {
+    background: var(--pure);
+    font-weight: 500;
+    color: #3b5998;
+}
+
+.login-form h2, .signup-form h2 {
+    margin-bottom: 25px;
+    color: var(--primary);
+}
+
+.input-icons i {
+    position: absolute;
+}
+
+.icon {
+    padding: 10px;
+    min-width: 40px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 10px 10px 35px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.phone {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.phone select {
+    padding: 10px 5px;
+    margin-right: 10px;
+}
+
+.login-form input[type="submit"], .signup-form input[type="submit"] {
+    font-size: 16px;
+    padding: 10px;
+    background: var(--btnPrimary);
+    color: var(--pure);
+    box-shadow: 1px 1px 1px #0287b8;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.login-form input[type="submit"]:hover, .signup-form input[type="submit"]:hover {
+    color: var(--darkText);
+    box-shadow: inset 2px 2px 2px rgba(0, 175, 240, 0.9), inset -1px -1px 2px #00aff0;
+}
+
+.oneLine {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 25px;
+}
+
+.oleft {
+    display: flex;
+}
+
+.oleft h4 {
+    padding: 0 5px;
+}
+
+.f_pass {
+    text-align: right;
+}
+
+.f_pass h4, .create_acc a, .grade-content span:hover {
+    padding-left: 10px;
+    color: var(--primary);
+}
+
+.f_pass:hover h4, .create_acc a:hover {
+    color: var(--warning);
+}
+
+.create_acc {
+    text-align: center;
+}
+
+.signup-form .choice {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.signup-form .user {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Sign up drop down */
+
+.gradebtn {
+    font-size: 14px;
+    width: 170px;
+    text-align: left;
+    border: 1px solid #e0e0e0;
+    padding: 5px 10px;
+    cursor: pointer;
+    background: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 0 15px 20px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .modalLoginSignup {
+        width: 700px;
+    }
+}
+
+@media (max-width: 767px) {
+    .modalLoginSignup {
+        width: 100%;
+    }
+    .signup-form, .login-form {
+        padding: 30px 20px 10px;
+    }
+    .split-block {
+        grid-template-columns: 1fr;
+    }
+    .left-part {
+        background: none;
+    }
+    .left-part img, .left-part h2 {
+        display: none;
+    }
+    .alternative {
+        width: 100%;
+        margin: 0 auto 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        padding: 0 20px;
+    }
+    .alternative button {
+        width: 90%;
+        margin: 20px auto 0;
+    }
+    .left-part {
+        order: 2;
+    }
+}

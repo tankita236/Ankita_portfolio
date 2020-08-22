@@ -1,0 +1,92 @@
+*{
+	border: 0px;
+	padding: 0px;
+	font-size: 20px;
+	word-spacing: 2px;
+	box-sizing:border-box;
+}
+
+body{
+	background-color: #A9A9A9;
+}
+
+h2, u{
+	color: #202020;
+	text-align: center;
+	font-size: 1.6rem;
+	text-decoration: none;
+}
+
+h3{
+	color: #000000;
+	font-size: 1.3rem;
+	text-decoration: none;
+}
+
+
+.container{
+	width:80%;
+	margin:auto;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	overflow: hidden;
+	/*background-color: #A9A9A9 ;*/
+
+}
+
+.centerText{
+	position: relative;
+	margin-top: 2%;
+	margin-bottom: 2%; 
+	text-align: center;
+}
+
+.bottomcenter{
+	position: absolute;
+	top:50%;
+	left: 20%;
+	font-size:2.3rem;
+	color:#ffffff;
+	text-decoration: bold;
+	text-align: center;
+}
+
+.edit{
+	color: #800000;
+	font-size: 2.3rem;
+}
+
+img{
+	display:inline-block;
+	margin-left:auto;
+	margin-right: auto;
+	border-radius: 35%;
+	height:auto;
+	width: 40%;
+}
+
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* text Grid */
+.Row{
+	display: inline-flex;
+	align-content: left;
+	padding: 1 4px;
+	text-align: center;
+	margin: 2%;
+
+}
+/*Creating 3 equal col */
+.Col{
+	flex: 30%;
+	max-width: 30%;
+	height: auto;
+	padding: 1.5%;
+	margin:0 auto;
+	display:inline-block;
+}
+
+

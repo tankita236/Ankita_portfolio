@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="All K-12 Schools">
+    <meta name="keywords" content="primary schools, secondary schools, K12 schools">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google FOnt family-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <title>Login and SignUp</title>
+    <script src="https://kit.fontawesome.com/7bc2a2c594.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/loginsignup.css">
+</head>
+
+<body>
+    <div class="modalLoginSignup">
+        <!-- Sign Up part -->
+        <div class="split-block">
+            <div class="left-part">
+                <img src="./images/about1.png" alt="">
+                <h2>Welcome to StudyInSchool</h2>
+                <div class="alternative">
+                    <button class="google"><i class="fab fa-google-plus-g"></i>Google</button>
+                    <button class="facebook"><i class="fab fa-facebook-f"></i>Facebook</button>
+                </div>
+            </div>
+            <div class="signup-form">
+                <div class="enroll-header-cover close">
+                    <i class="fas fa-times"></i>
+                </div>
+                <h2>Sign Up</h2>
+                <form>
+                    <div class="choice">
+                        <label class="spacing">I am a</label>
+                        <div class="user">
+                            <label> <input type="radio"> Parent</label>
+                            <label> <input type="radio"> Student</label>
+                            <label> <input type="radio"> Others</label>
+                        </div>
+                    </div>
+                    <label>Grade</label>
+                    <select class="gradebtn"><i class="fas fa-sort-down"></i>
+                        <option selected disabled hidden>Choose</option>
+                        <option value="Pre-Primary">Pre-Primary</option>
+                        <option value="Primary">Primary</option>
+                        <option value="Middle">Middle</option>
+                        <option value="Secondary">Secondary</option>
+                        <option value="Senior Secondary">Senior Secondary</option>
+                    </select>
+
+                    <div class="input-icons">
+                        <i class="fa fa-user icon"></i>
+                        <input class="input-field" type="text" name="" placeholder="Full Name">
+                        <i class="fa fa-envelope icon"></i>
+                        <input class="input-field" type="email" name="" placeholder="Email Id">
+                        <div class="phone">
+                            <select name="" id="">
+                                <option value="">+91</option>
+                                <option value="">+11</option>
+                                <option value="">+81</option>
+                            </select>
+                            <input type="tel" placeholder="987453278" name="" id="">
+                        </div>
+
+                        <i class="fas fa-lock icon"></i>
+                        <input class="input-field" type="password" name="" placeholder="Enter Password">
+                        <i class="fas fa-lock icon"></i>
+                        <input class="input-field" type="password" name="" placeholder="Confirm Password">
+                    </div>
+                    <input type="submit" value="SignUp"><br>
+                    <div class="create_acc">Already have an Account !<a href="#">Login</a></div>
+                </form>
+            </div>
+        </div>
+        <!-- Login part -->
+        <div class="split-block">
+            <div class="left-part">
+                <img src="./images/about1.png" alt="">
+                <h2>Welcome to Web Learning</h2>
+                <p>Creator - Ankita Tiwari</p>
+                <div class="alternative">
+                    <button class="google"><i class="fab fa-google-plus-g"></i>Google</button>
+                    <button class="facebook"><i class="fab fa-facebook-f"></i>Facebook</button>
+                </div>
+            </div>
+            <div class="login-form">
+                <div class="enroll-header-cover close">
+                    <i class="fas fa-times"></i>
+                </div>
+                <h2>Login</h2>
+                <form>
+                    <div class="input-icons">
+                        <i class="fa fa-envelope icon"></i>
+                        <input class="input-field" type="email" placeholder="Email Id" autofocus>
+                        <i class="fas fa-lock icon"></i>
+                        <input class="input-field" type="password" placeholder="Password">
+                    </div>
+                    <div class="oneLine">
+                        <label class="oleft"> <input type="checkbox" name="" id="">
+                            <h4>Remember Me</h4>
+                        </label>
+                        <a href="#" class="f_pass">
+                            <h4>Forgot Password ?</h4>
+                        </a>
+                    </div>
+                    <input type="submit" value="Login"><br>
+                    <div class="create_acc">Don't have an Account ?<a href="#signupBtn">Register</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

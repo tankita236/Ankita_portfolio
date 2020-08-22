@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ankita Prtfolio</title>
+    <!-- google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap" rel="stylesheet">
+
+    <!--Font awesosme-->
+    <script src="https://kit.fontawesome.com/7bc2a2c594.js" crossorigin="anonymous"></script>
+
+    <!--CSS for Slick Slider section 5-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <!--CSS stylesheet-->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav id="main-nav">
+            <div class="brand">
+                <img src="./images/logo.png" alt="">
+            </div>
+
+            <div class="options">
+                <a href="#about"><button class="btn">About</button></a>
+                <a href="#creation"><button class="btn">Creations</button></a>
+                <a href="#art"><button class="btn">Art</button></a>
+                <!-- <a href="#designs"><button class="btn">Designs</button></a> -->
+                <!-- <a href="StoryBlog.html"><button class="btn">Blog</button></a> -->
+            </div>
+            <div class="dropdown">
+                <button onclick="myFunction(event)" class="dropdown-btn toggle"><i class="fas fa-bars"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#about">About</a>
+                    <a href="#creation">Creations</a>
+                    <a href="#art">Art</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="S1">
+        <div class="S1left ">
+            <img src="./images/self.png" alt="">
+        </div>
+        <div class="S1right">
+            <div class="S1right-content">
+                <h2>Ankita Tiwari</h2>
+                <div>I'm a FrontEnd Web <br> <span class="highlight">Designer & Developer</span> </div>
+                <p>
+                    Keys skills in HTML, CSS, Bootstrap and Javascript. Innovative and talented for making
+                    responsive
+                    web designs and website.
+                </p>
+                <button class="btn btn-primary2">View Resume</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about" class="S2">
+        <div class="S2left">
+            <img src="./images/self3.png" alt="">
+        </div>
+        <div class="S2right">
+            <h1>Hello, I'm Ankita Tiwari</h1>
+            <p>
+                I am a Computer Engineering student from Bharati Vidyapeeth College of Engineering for Women's,
+                Pune.<br>
+                I am on my journey in pursuing career as a Web Designer and Developer.
+            </p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/tankita236/" class="linkedin"><i class="fa fa-linkedin"
+                        aria-hidden="true"></i></a>
+                <a href="#" class="insta"><i class="fa fa-instagram " aria-hidden="true"></i></a>
+                <a href="#" class="git"><i class="fa fa-github " aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="S4">
+        <h1>I am looking for Opportunities</h1>
+        <p>
+            I believe every organizations has concern about how to make themselves in reach to customers by
+            delivering the most comprehensive IT services. <br>
+            I seek opportunities where with my designing and development skill I can help the organization to
+            showcase there faciltities to their customers most effectively.
+        </p>
+        <button class="btn btn-primary2">View Resume</button>
+    </section>
+
+    <section class="S5">
+        <div class="S5Container">
+            <h1 class="Sheading"><span class="dark-highlight">My</span> Work Experience</h1>
+            <p>I provide high standard clean responsive website for your business solutions</p>
+            <div class="S5slider">
+                <!--Client 1-->
+                <div class="S5block">
+                    <img src="./images/lady.png" alt="">
+                    <h2> <b>Client</b> : <span class="dark-highlight">Krux Prokon PVT LTD</span></h2>
+                    <p> Worked as Front-End Web Developer along with designing wireframes of Web Pages.</p>
+                    <h3><b>Developed Website</b> : <a href="http://studyinschool.com/"><span
+                                class="dark-highlight">StudyInSchool</span></a></h3>
+                </div>
+                <!--Client 2-->
+                <div class="S5block">
+                    <img src="./images/lady.png" alt="">
+                    <h2> <b>Client</b> : <span class="dark-highlight">Eurocyklar</span></h2>
+                    <p> Worked as a Web Designer and Developer to develop an online Ecommerce website using WIX
+                        Editor</p>
+                    <h3><b>Developed Website</b> : <a href="http://www.eurocyklar.com"><span
+                                class="dark-highlight">EuroCyklar</span></a></h3>
+                </div>
+                <!--Clent 3-->
+                <div class="S5block">
+                    <img src="./images/lady.png" alt="">
+                    <h2> <b>Client</b> : <span class="dark-highlight">Physics-369</span></h2>
+                    <p> Worked as a Front End Web Designer, responsible for making Mobile view Website</p>
+                    <h3><b>Developed Website</b> : <a href="http://www.eurocyklar.com"><span class="dark-highlight">Test
+                                Series</span></a></h3>
+                </div>
+            </div>
+            <div class="S5sliderdots"></div>
+        </div>
+    </section>
+
+    <section id="creation" class="S6">
+        <div class="S6Container">
+            <h1 class="Sheading"><span class="highlight">My</span> Creations</h1>
+            <p>
+                My work starting from a Learner to Professional to achieve high standard clean responsive websites
+            </p>
+            <div class="S6card">
+                <div class="S6box">
+                    <img src="./images/webImages/100.png" alt="">
+                    <div class="S6overlay">
+                        <h1><a href="#">K-12 Schools</a></h1>
+                    </div>
+                </div>
+
+                <div class="S6box">
+                    <img src="./images/webImages/1.png" alt="">
+                    <div class="S6overlay">
+                        <h1><a href="#"> Netflix Clone</a></h1>
+                    </div>
+                </div>
+
+                <div class="S6box">
+                    <img src="./images/webImages/19.png" alt="">
+                    <div class="S6overlay">
+                        <h1><a href="#">IBD Disease</a></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="art" class="S7">
+        <div class="S7Container">
+            <h1 class="Sheading"><span class="dark-highlight">My</span> Art</h1>
+            <p>
+                Each skills are each developed due to some hobby tough we never realize it, my Designs born through
+                my Art
+            </p>
+            <div class="S7card">
+                <div class="S7box">
+                    <img src="./images/hobby_images/d.jpg" alt="">
+                    <div class="S7overlay">
+                        <h1><a href="#"> Paintings </a> </h1>
+                    </div>
+                </div>
+                <div class="S7box">
+                    <img src="./images/hobby_images/4.jpg" alt="">
+                    <div class="S7overlay">
+                        <h1><a href="#">Sketches</a></h1>
+
+                    </div>
+                </div>
+                <div class="S7box">
+                    <img src="./images/hobby_images/rangoli.jpg" alt="">
+                    <div class="S7overlay">
+                        <h1><a href="#">Rangoli</a></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- S8 MYDesigns section: need to be created later-->
+    <!--        <section id="designs" class="S6">
+            <div class="S6Container">
+                <h1 class="Sheading"><span class="highlight">My</span> Designs</h1>
+                <p>
+                    We provide clean Wireframe designs for responsive website for you business solutions
+                 </p>
+                <div class="S6card">
+                    <div class="S6box">
+                        <img src="./images/webImages/100.png" alt="">
+                        <div class="S6overlay">
+                            <h1><a href="#">K-12 Schools</a></h1>
+                        </div>
+                    </div>
+                    <div class="S6box">
+                        <img src="./images/webImages/1.png" alt="">
+                        <div class="S6overlay">
+                            <h1><a href="#"> Netflix Clone</a></h1>
+                        </div>
+                    </div>
+                    <div class="S6box">
+                        <img src="./images/webImages/19.png" alt="">
+                        <div class="S6overlay">
+                            <h1><a href="#">IBD Disease</a></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    -->
+
+    <!--Footer-->
+    <footer>
+        <img src="./images/logo.png" alt="">
+        <div>
+            <button class="btn">About</button>
+            <button class="btn">Creations</button>
+            <button class="btn">Art</button>
+        </div>
+        <div class="social-links">
+
+            <a href="https://www.linkedin.com/in/tankita236/" class="linkedin"><i class="fa fa-linkedin"
+                    aria-hidden="true"></i></a>
+
+            <a href="https://github.com/coder236" class="insta"><i class="fa fa-instagram " aria-hidden="true"></i></a>
+
+            <a href="#" class="git"><i class="fa fa-github " aria-hidden="true"></i></a>
+
+        </div>
+
+    </footer>
+
+    <!-- Script for Slick SLider of section 5 -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!--LInking my JS file-->
+    <script type="text/javascript" src="./js/app.js"></script>
+
+</body>
+
+</html>
