@@ -1,14 +1,15 @@
-.gallery{
+.gallery {
   width: 100%;
   margin: 3rem auto 2rem;
   padding: 0 20px;
   background: linear-gradient();
 }
 
-.gallery h1{
+.gallery h1 {
   text-align: center;
-  margin-bottom:30px;
+  margin-bottom: 30px;
 }
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -31,14 +32,20 @@
   border: 1px solid #e0e0e0;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
+  .gallery {
+    margin-top: 2rem;
+  }
   .column {
-    flex: 50%;
-    max-width: 50%;
+    flex: 31%;
+    column-gap: 10px;
   }
 }
 
 @media screen and (max-width: 600px) {
+  .gallery {
+    margin-top: 2rem;
+  }
   .column {
     flex: 100%;
     max-width: 100%;
