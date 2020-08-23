@@ -1,58 +1,113 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="hobbyStyle.css">
-</head>
-<body>
 
-<section>
-	<h1 style="text-align:center;font-size:35px;margin-top:2%;"><u>Painting & Sketching</u></h1>
-		
-	<div class="row"> 
-	<!--Col 1-->
-	  <div class="column">
-	    <img src="./images/a.jpg" style="width:100%">
-	    <img src="./images/1.jpg" style="width:100%">
-	    <img src="./images/2.jpg" style="width:100%">
-	    <img src="./images/b.jpg" style="width:100%">
-	    <img src="./images/3.jpg" style="width:100%">
-	    <img src="./images/4.jpg" style="width:100%">
-	    <img src="./images/5.jpg" style="width:100%">
-	    <img src="./images/e.jpg" style="width:100%">
-	  </div>
-	<!--Col 2-->
-	  <div class="column">
-	    <img src="./images/c.jpg" style="width:100%">
-	    <img src="./images/6.jpg" style="width:100%">
-	    <img src="./images/7.jpg" style="width:100%">
-	    <img src="./images/8.jpg" style="width:100%">
-	    <img src="./images/9.jpg" style="width:100%">
-	    <img src="./images/10.jpg" style="width:100%">
-	  </div>  
-	<!-- Col 3 -->
-	  <div class="column">
-	    <img src="./images/d.jpg" style="width:100%">
-	    <img src="./images/11.jpg" style="width:100%">
-	    <img src="./images/12.jpg" style="width:100%">
-	    <img src="./images/13.jpg" style="width:100%">
-	    <img src="./images/14.jpg" style="width:100%">
-	    <img src="./images/15.jpg" style="width:100%">
-	    <img src="./images/f.jpg" style="width:100%">
-	  </div>
-	<!--col 4 -->
-	  <div class="column">
-	    <img src="./images/16.jpg" style="width:100%">
-	    <img src="./images/17.jpg" style="width:100%">
-	    <img src="./images/18.jpg" style="width:100%">
-	    <img src="./images/19.jpg" style="width:100%">
-	    <img src="./images/20.jpg" style="width:100%">
-	    <img src="./images/21.jpg" style="width:100%">
-	  </div>
-	 	
-	<!-- Animated Wave-->
-		<!-- <div class="wave"></div> -->
-</section>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> My Art</title>
+	<!-- google fonts-->
+	<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap" rel="stylesheet">
+
+	<!--Font awesosme-->
+	<script src="https://kit.fontawesome.com/7bc2a2c594.js" crossorigin="anonymous"></script>
+
+	<!--CSS for Slick Slider section 5-->
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+	<!--CSS stylesheet-->
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/gallery.css">
+</head>
+
+<body>
+	<header>
+		<nav id="main-nav">
+			<a href="index.html" class="brand">
+				<img src="./images/logo.png" alt="">
+			</a>
+
+			<div class="options">
+				<a href="./index.html"><button class="btn">About</button></a>
+				<a href="./passion.html"><button class="btn">Creations</button></a>
+				<a href="./hobby.html"><button class="btn">Art</button></a>
+				<!-- <a href="#designs"><button class="btn">Designs</button></a> -->
+				<!-- <a href="StoryBlog.html"><button class="btn">Blog</button></a> -->
+			</div>
+			<div class="dropdown">
+				<button onclick="myFunction(event)" class="dropdown-btn toggle"><i class="fas fa-bars"></i></button>
+				<div id="myDropdown" class="dropdown-content">
+					<a href="./index.html">About</a>
+					<a href="./passion.html">Creations</a>
+					<a href="./hobby.html">Art</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<section class="gallery">
+		<h1>Painting & Sketching</h1>
+
+		<div class="row">
+			<!--Col 1-->
+			<div class="column">
+				<img src="./images/hobby_images/a.jpg">
+				<img src="./images/hobby_images/1.jpg">
+				<img src="./images/hobby_images/2.jpg">
+				<img src="./images/hobby_images/b.jpg">
+				<img src="./images/hobby_images/10.jpg">
+				<img src="./images/hobby_images/4.jpg">
+				<img src="./images/hobby_images/5.jpg">
+				<img src="./images/hobby_images/18.jpg">
+				<img src="./images/hobby_images/19.jpg">
+				<img src="./images/hobby_images/e.jpg">
+			</div>
+			<!--Col 2-->
+			<div class="column">
+				<img src="./images/hobby_images/c.jpg">
+				<img src="./images/hobby_images/6.jpg">
+				<img src="./images/hobby_images/7.jpg">
+				<img src="./images/hobby_images/17.jpg">
+				<img src="./images/hobby_images/21.jpg">
+				<img src="./images/hobby_images/8.jpg">
+				<img src="./images/hobby_images/9.jpg">
+			</div>
+			<!-- Col 3 -->
+			<div class="column">
+				<img src="./images/hobby_images/16.jpg">
+				<img src="./images/hobby_images/d.jpg">
+				<img src="./images/hobby_images/11.jpg">
+				<img src="./images/hobby_images/12.jpg">
+				<img src="./images/hobby_images/13.jpg">
+				<img src="./images/hobby_images/14.jpg">
+				<img src="./images/hobby_images/15.jpg">
+				<img src="./images/hobby_images/f.jpg">
+				<img src="./images/hobby_images/20.jpg">
+			</div>
+		</div>
+
+	</section>
+	<!--Footer-->
+	<footer>
+		<img src="./images/logo.png" alt="">
+		<div>
+			<button class="btn">About</button>
+			<button class="btn">Creations</button>
+			<button class="btn">Art</button>
+		</div>
+		<div class="social-links">
+			<a href="https://www.linkedin.com/in/tankita236/" class="linkedin"><i class="fa fa-linkedin"
+					aria-hidden="true"></i></a>
+			<a href="https://www.instagram.com/tankita236/" class="insta"><i class="fa fa-instagram "
+					aria-hidden="true"></i></a>
+			<a href="https://github.com/coder236" class="git"><i class="fa fa-github " aria-hidden="true"></i></a>
+		</div>
+	</footer>
+	<!-- Script for Slick SLider of section 5 -->
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<!--LInking my JS file-->
+	<script type="text/javascript" src="./js/app.js"></script>
 
 </body>
+
 </html>

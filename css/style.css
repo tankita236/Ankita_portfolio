@@ -1,18 +1,11 @@
 @import 'utilities.css';
-:root {
-    --primary: #15e6bc;
-    --secondary: #71059c;
-    --ternary: rgb(113, 5, 156, 0.5);
-    --darkText: #313131;
-    --lightText: #e0e0e0;
-    --dimText: #f7f7f7;
-    --pure: #fff;
-}
-
 header {
     width: 100%;
     background: var(--dimText);
     padding: 5px;
+    position: sticky;
+    top:0;
+    z-index: 2;
 }
 
 nav {
@@ -52,9 +45,9 @@ nav button i {
 
 .dropdown-content {
     position: absolute;
-    top:50px;
+    top: 50px;
     right: 15px;
-    background:#313131;
+    background: var(--darkText);
     border-radius: 5px;
     width: 180px;
     z-index: 1;
@@ -64,14 +57,17 @@ nav button i {
 .dropdown-content a {
     color: var(--pure);
     padding: 10px 10px;
-    border-bottom: 1px solid #b3b3b3;
+    border: none;
+    border-bottom: 1px solid var(--midText);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
     display: block;
     margin-bottom: 2px;
+
 }
-.dropdown-content a:nth-last-child(1){
+
+.dropdown-content a:nth-last-child(1) {
     border-bottom: none;
 }
 
@@ -337,11 +333,15 @@ footer {
     position: relative;
     width: 100%;
     padding: 1rem 0 1rem;
-    background: var(--dimText);
+    background: var(--lightText);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+footer img {
+    height: 50px;
 }
 
 @media (min-width:992px) and (max-width:1199px) {
@@ -414,7 +414,6 @@ footer {
     .S1right {
         width: 100%;
         height: 650px;
-        border: 1px solid red;
         position: absolute;
         margin: 0;
         margin-top: 0;
@@ -446,7 +445,7 @@ footer {
     .S5slider {
         width: 90%;
     }
-    .S5block{
+    .S5block {
         padding: 3rem 1rem;
     }
     .S6 {
@@ -458,5 +457,7 @@ footer {
         width: 90%;
         grid-template-columns: 1fr;
     }
-
+    footer div .btn{
+        font-size: 12px;
+    }
 }

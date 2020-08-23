@@ -1,0 +1,46 @@
+.gallery{
+  width: 100%;
+  margin: 3rem auto 2rem;
+  padding: 0 20px;
+  background: linear-gradient();
+}
+
+.gallery h1{
+  text-align: center;
+  margin-bottom:30px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  column-gap: 20px;
+}
+
+.column {
+  flex: 32%;
+  max-width: 32%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}

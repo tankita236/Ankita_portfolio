@@ -1,53 +1,109 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Website Page</title>
-	<link rel="stylesheet" type="text/css" href="passionStyle.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Creations</title>
+	<!-- google fonts-->
+	<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap" rel="stylesheet">
+
+	<!--Font awesosme-->
+	<script src="https://kit.fontawesome.com/7bc2a2c594.js" crossorigin="anonymous"></script>
+
+	<!--CSS stylesheet-->
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/gallery.css">
 </head>
+
 <body>
-				
-	
-	
-<section>
 
-	<h1 style="text-align:center;font-size:35px;"><u>Snippets of Web Pages </u></h1>	
-		
-	<div class="row"> 
-	<!--Col 1-->
-	  <div class="column">
-	    <img src="./webImages/1.png" style="width:100%">
-	    <img src="./webImages/2.jpg" style="width:100%">
-	    <img src="./webImages/15.png" style="width:100%">
-	    <img src="./webImages/3.png" style="width:100%">
-	    <img src="./webImages/4.jpg" style="width:100%">
-	    <img src="./webImages/18.jpg" style="width:100%">
-	    <img src="./webImages/16.png" style="width:100%">
-	  </div>
-	<!--Col 2-->
-	  <div class="column">
-	    <img src="./webImages/5.png" style="width:100%">
-	    <img src="./webImages/6.jpg" style="width:100%">
-	    <img src="./webImages/7.jpg" style="width:100%">
-	    <img src="./webImages/19.png" style="width:100%">
-	    <img src="./webImages/20.png" style="width:100%">
-	    <img src="./webImages/14.png" style="width:100%">
-	    <img src="./webImages/17.jpg" style="width:100%">
-	  </div>
-	<!--Col 3-->
-	  <div class="column">
-	  	<img src="./webImages/21.png" style="width:100%">
-	    <img src="./webImages/22.png" style="width:100%">
-	    <img src="./webImages/8.png" style="width:100%">
-	    <img src="./webImages/9.jpg" style="width:100%">
-	    <img src="./webImages/10.jpg" style="width:100%">
-	    <img src="./webImages/11.jpg" style="width:100%">
-	    <img src="./webImages/12.jpg" style="width:100%">
-	  </div>	
+	<header>
+		<nav id="main-nav">
+			<a href="index.html" class="brand">
+				<img src="./images/logo.png" alt="">
+			</a>
 
-	 	<!-- Animated Wave-->
-		<!-- <div class="wave"></div> -->
+			<div class="options">
+				<a href="./index.html"><button class="btn">About</button></a>
+				<a href="./passion.html"><button class="btn">Creations</button></a>
+				<a href="./hobby.html"><button class="btn">Art</button></a>
+				<!-- <a href="#designs"><button class="btn">Designs</button></a> -->
+				<!-- <a href="StoryBlog.html"><button class="btn">Blog</button></a> -->
+			</div>
+			<div class="dropdown">
+				<button onclick="myFunction(event)" class="dropdown-btn toggle"><i class="fas fa-bars"></i></button>
+				<div id="myDropdown" class="dropdown-content">
+					<a href="./index.html">About</a>
+					<a href="./passion.html">Creations</a>
+					<a href="./hobby.html">Art</a>
+				</div>
+			</div>
+		</nav>
+	</header>
 
-</section>
+	<section class="gallery">
+		<h1>Snippets of Web Pages</h1>
+
+		<div class="row">
+			<!--Col 1-->
+			<div class="column">
+				<img src="./images/webImages/100.png">
+				<img src="./images/webImages/1.png">
+				<img src="./images/webImages/2.jpg">
+				<img src="./images/webImages/15.png">
+				<img src="./images/webImages/26.png">
+				<img src="./images/webImages/3.png">
+				<img src="./images/webImages/4.jpg">
+				<img src="./images/webImages/18.jpg">
+				<img src="./images/webImages/16.png">
+			</div>
+			<!--Col 2-->
+			<div class="column">
+				<img src="./images/webImages/5.png">
+				<img src="./images/webImages/6.jpg">
+				<img src="./images/webImages/7.jpg">
+				<img src="./images/webImages/25.png">
+				<img src="./images/webImages/19.png">
+				<img src="./images/webImages/20.png">
+				<img src="./images/webImages/14.png">
+				<img src="./images/webImages/17.jpg">
+				<img src="./images/webImages/29.png">
+			</div>
+			<!--Col 3-->
+			<div class="column">
+				<img src="./images/webImages/23.png">
+				<img src="./images/webImages/24.png">
+				<img src="./images/webImages/21.png">
+				<img src="./images/webImages/22.png">
+				<img src="./images/webImages/8.png">
+				<img src="./images/webImages/9.jpg">
+				<img src="./images/webImages/10.jpg">
+				<img src="./images/webImages/11.jpg">
+				<img src="./images/webImages/12.jpg">
+			</div>
+		</div>
+
+	</section>
+
+	<!--Footer-->
+	<footer>
+		<img src="./images/logo.png" alt="">
+		<div>
+			<button class="btn">About</button>
+			<button class="btn">Creations</button>
+			<button class="btn">Art</button>
+		</div>
+		<div class="social-links">
+			<a href="https://www.linkedin.com/in/tankita236/" class="linkedin"><i class="fa fa-linkedin"
+					aria-hidden="true"></i></a>
+			<a href="https://www.instagram.com/tankita236/" class="insta"><i class="fa fa-instagram "
+					aria-hidden="true"></i></a>
+			<a href="https://github.com/coder236" class="git"><i class="fa fa-github " aria-hidden="true"></i></a>
+		</div>
+	</footer>
+	<!--LInking my JS file-->
+	<script type="text/javascript" src="./js/app.js"></script>
 
 </body>
+
 </html>
