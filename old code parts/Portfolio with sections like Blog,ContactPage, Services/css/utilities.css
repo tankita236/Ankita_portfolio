@@ -1,0 +1,138 @@
+:root {
+    --primary: #15e6bc;
+    --secondary: #71059c;
+    --ternary: rgb(113, 5, 156, 0.5);
+    --darkText: #313131;
+    --lightText: #e0e0e0;
+    --dimText: #f7f7f7;
+    --pure: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    color: var(--darkText);
+    font-family: 'Oxygen', sans-serif;
+}
+
+/* Below line is used get ur animation work without issue*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Buttons */
+
+.btn {
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    text-transform: capitalize;
+}
+
+.btn-primary, .btn-primary2, .btn-secondary, .btn-secondary2 {
+    padding: 10px 25px;
+}
+
+/* Primary Button */
+
+.btn-primary {
+    background: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.btn-primary:hover {
+    background: var(--pure);
+    border: 2px solid var(--primary);
+}
+
+.btn-primary2 {
+    background:transparent;
+    color:var(--pure);
+    border: 2px solid var(--primary);
+}
+
+.btn-primary2:hover {
+    background: var(--primary);
+    color: var(--darkText);
+    border: 2px solid var(--primary);
+}
+
+.btn-secondary {
+    background: var(--ternary);
+    border: 2px solid var(--ternary);
+}
+
+.btn-secondary:hover {
+    background: var(--pure);
+    border: 2px solid var(--ternary);
+}
+
+.btn-secondary2 {
+    background:transparent;
+    color: var(--pure);
+    border: 2px solid var(--ternary);
+}
+
+.btn-secondary2:hover {
+    background: var(--ternary);
+    border: 2px solid var(--ternary);
+}
+
+/* Heading Element */
+
+h1, h2, h3, h4,p{
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+/* Paragraph */
+
+p {
+    font-size: 15px;
+    line-height: 1.8em;
+    word-spacing: 2px;
+}
+
+/* Fontawesome Icons */
+
+i {
+    font-size: 16px;
+    color: var(--darkText);
+}
+
+.highlight {
+    color:var(--primary);
+}
+
+.dark-highlight {
+    color:var(--secondary);
+}
+
