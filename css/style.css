@@ -200,6 +200,7 @@ nav button i {
 .S5slider {
     width: 50%;
     margin: 0 auto;
+    position: relative;
 }
 
 .S5block {
@@ -221,6 +222,30 @@ nav button i {
 
 .S5block p {
     margin: 2rem auto;
+}
+.arrows {
+   width: 10px;
+   height: 10px;
+   border-color: #000;
+   position: absolute;
+   top: 50%;
+}
+.arrows:hover {
+    cursor: pointer;
+}
+.prev {
+   border-bottom: 3px solid;
+   border-left: 3px solid;
+   transform: rotate(45deg);
+   left: 10px;
+}
+
+   
+.next{
+   border-bottom: 3px solid;
+   border-left: 3px solid;
+   transform: rotate(-135deg);
+   right: 10px;
 }
 
 .S5sliderdots {
