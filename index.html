@@ -9,7 +9,6 @@
     <!-- google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap" rel="stylesheet">
     <!--CSS for Slick Slider section 5-->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 </head>
 
 <body>
@@ -89,13 +88,14 @@
 
     </section>
 
+    <!-- S5 slider -->
     <section class="S5">
         <div class="S5Container">
             <h1 class="Sheading"><span class="dark-highlight">My</span> Work Experience</h1>
             <p>I provide high standard clean responsive website for your business solutions</p>
             <div class="S5slider">
                 <!--Client 1-->
-                <div class="S5block">
+                <div class="S5block" id="slider-content-1">
                     <img src="./images/avatar.webp" alt="">
                     <h2> <b>Client</b> : <span class="dark-highlight">Krux Prokon PVT LTD</span></h2>
                     <p>
@@ -106,7 +106,7 @@
                             target="_blank"><span class="dark-highlight">StudyInSchool</span></a></h3>
                 </div>
                 <!-- Client 2 -->
-                <div class="S5block">
+                <div class="S5block display-none" id="slider-content-2">
                     <img src="./images/avatar.webp" alt="">
                     <h2> <b>Client</b> : <span class="dark-highlight">Test Series</span></h2>
                     <p> Worked as a Front End Web Designer, responsible for making Mobile view Website</p>
@@ -114,17 +114,21 @@
                             target="_blank"><span class="dark-highlight">Test
                                 Series</span></a></h3>
                 </div>
-                <!-- Client 3 -->
-                <!-- <div class="S5block"> -->
-                <!-- <img src="./images/avatar.jpeg" alt=""> -->
-                <!-- <h2> <b>Client</b> : <span class="dark-highlight">Eurocyklar</span></h2> -->
-                <!-- <p> Worked as a Web Designer and Developer to develop an online Ecommerce website using WIX -->
-                <!-- Editor</p> -->
-                <!-- <h3><b>Developed Website</b> : <a href="http://www.eurocyklar.com/" target="_blank"><span -->
-                <!-- class="dark-highlight">EuroCyklar</span></a></h3> -->
-                <!-- </div> -->
             </div>
-            <div class="S5sliderdots"></div>
+            <div class="S5sliderdots">
+                <ul class="S5dots" role="tablist" style="display: flex;">
+                    <li class="slick-active" id="dot-1" onclick="handleSliderDotClick(1)" role="presentation">
+                        <button type="button" role="tab" >
+                            
+                        </button>
+                    </li>
+                    <li role="presentation" id="dot-2" onclick="handleSliderDotClick(2)">
+                        <button type="button" role="tab" >
+                            
+                        </button>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -249,10 +253,6 @@
     <!--Font awesosme-->
     <script src="https://kit.fontawesome.com/7bc2a2c594.js" crossorigin="anonymous"></script>
 
-    <!-- Script for Slick SLider of section 5 -->
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <!--LInking my JS file-->
     <script type="text/javascript" src="./js/app.js"></script>
