@@ -1,12 +1,28 @@
-$(document).ready(function () {
-  //Select the wrapper in html
-  $('.S5slider').slick({
-    arrows: false, //It results in hidding prev and next buttons
-    dots: true, //Now dots will be displayed
-    appendDots: '.S5sliderdots',// It tells where the dots must be shown
-    dotsClass: 'S5dots'//no . becoz it is custom class
-  });
-});
+const handleSliderDotClick = (sliderDotSelectedIndex) => {
+
+
+  // hide all the slider div
+  document.querySelectorAll('.S5block').forEach(sliderContentDiv => {
+    sliderContentDiv.classList.add('display-none')
+  })
+  // unhide the selected slider content
+  // get the slider div of the selected dot
+  const sliderContentSelectedIndexDiv = document.querySelector(`#slider-content-${sliderDotSelectedIndex}`);
+  sliderContentSelectedIndexDiv.classList.remove('display-none')
+
+  // remove slick-active class from the prev selected dot
+  const prevSelectedDot = document.querySelector('.slick-active');
+  prevSelectedDot.classList.remove('slick-active');
+  // add slick-active class to current selected dot
+  const currSelectedDot = document.querySelector(`li[id='dot-${sliderDotSelectedIndex}']`)
+  currSelectedDot.classList.add('slick-active')
+
+}
+
+
+
+
+
 
 
 /* For toggle */
