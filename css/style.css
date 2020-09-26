@@ -155,7 +155,7 @@ nav button i {
     padding: 7rem 0 12rem;
     text-align: center;
     /* background with image and overlay on it */
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/camera.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/camera.webp');
     color: var(--pure);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 86%, 0 100%);
 }
