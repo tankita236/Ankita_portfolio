@@ -1,0 +1,85 @@
+@import 'utilities.css';
+.S1 {
+    margin: 0 auto;
+    background: var(--darkText);
+}
+
+.S2 {
+    margin: 6.3rem auto;
+    background: var(--lightText);
+}
+
+.S1Container, .S2Container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.S1Container h1 {
+    color: var(--pure);
+}
+
+.S1Container .Sheading, .S2Container .Sheading {
+    margin-bottom: 2rem;
+}
+
+.S1Container .Sheading+p {
+    color: var(--pure);
+}
+
+.S1card, .S2card {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+    row-gap: 3rem;
+}
+
+.S1box, .S2box {
+    position: relative;
+    border-radius: 5px;
+    height: 250px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.S1box img, .S2box img {
+    width: 100%;
+    height: 100%;
+}
+
+.S1overlay, .S2overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(21, 230, 188, 0.7);
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+}
+
+.S2overlay {
+    background: rgba(113, 5, 156, 0.5);
+}
+
+.S1overlay:hover, .S2overlay:hover {
+    opacity: 1;
+}
+
+.S1overlay:hover h1, .S1overlay:hover a {
+    font-weight: 550;
+    margin: 0.5rem auto;
+    color: var(--darkText);
+}
+
+.S2overlay:hover h1, .S2overlay:hover a {
+    margin: 0.5rem auto;
+    color: var(--pure);
+}
