@@ -15,19 +15,23 @@
     <header>
         <nav id="main-nav">
             <a href="./index.html" class="brand">
-                <img src="./images/logo.webp" alt="">
+                <picture>
+                    <source srcset="./images/logo.png">
+                    <source srcset="./images/logo.jpg">
+                    <img src="./images/logo.webp" alt="AT Creations">
+                </picture>
             </a>
 
             <div class="options">
-                <a href="./index.html" ><button class="btn dark-highlight">About</button></a>
-                <a href="./passion.html"><button class="btn">Creations</button></a>
+                <a href="./index.html"><button class="btn dark-highlight">About</button></a>
+                <a href="./webCreation.html"><button class="btn">Creations</button></a>
                 <a href="./hobby.html"><button class="btn">Art</button></a>
             </div>
             <div class="dropdown">
                 <button onclick="myFunction(event)" class="dropdown-btn toggle"><i class="fas fa-bars"></i></button>
                 <div id="myDropdown" class="dropdown-content">
                     <a href="./index.html">About</a>
-                    <a href="./passion.html">Creations</a>
+                    <a href="./webCreation.html">Creations</a>
                     <a href="./hobby.html">Art</a>
                 </div>
             </div>
@@ -36,7 +40,10 @@
 
     <section class="S1">
         <div class="S1left ">
-            <img src="./images/self.webp" alt="">
+            <picture>
+                <source srcset="./images/self.png">
+                <img src="./images/self.webp" alt="Ankita Tiwari">
+            </picture>
         </div>
         <div class="S1right">
             <div class="S1right-content">
@@ -54,7 +61,10 @@
 
     <section id="about" class="S2">
         <div class="S2left">
-            <img src="./images/self3.webp" alt="">
+            <picture>
+                <source srcset="./images/self2.png">
+                <img src="./images/self2.webp" alt="Ankita Tiwari">
+            </picture>
         </div>
         <div class="S2right">
             <h1>Hello, I'm Ankita Tiwari</h1>
@@ -64,9 +74,10 @@
                 I am a Web Designer and Developer.
             </p>
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/tankita236/" target="_blank" class="linkedin"><i class="fa fa-linkedin"
+                <a href="https://www.linkedin.com/in/tankita236/" target="_blank" class="linkedin"><i
+                        class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://github.com/tankita236" target="_blank" class="git"><i class="fa fa-github "
                         aria-hidden="true"></i></a>
-                <a href="https://github.com/tankita236" target="_blank" class="git"><i class="fa fa-github " aria-hidden="true"></i></a>
             </div>
         </div>
     </section>
@@ -92,7 +103,10 @@
                 <!--Client 1-->
                 <div class="arrows prev" onclick="handleSliderDotClick(1)"></div>
                 <div class="S5block" id="slider-content-1">
-                    <img src="./images/avatar.webp" alt="">
+                    <picture>
+                        <source srcset="./images/avatar.jpg">
+                        <img src="./images/avatar.webp" alt="Avatar">
+                    </picture>
                     <h2> <b>Client</b> : <span class="dark-highlight">Krux Prokon PVT LTD</span></h2>
                     <p>
                         Web Designer and Front-End Web Developer <br>
@@ -103,7 +117,10 @@
                 </div>
                 <!-- Client 2 -->
                 <div class="S5block display-none" id="slider-content-2">
-                    <img src="./images/avatar.webp" alt="">
+                    <picture>
+                        <source srcset="./images/avatar.jpg">
+                        <img src="./images/avatar.webp" alt="Avatar">
+                    </picture>
                     <h2> <b>Client</b> : <span class="dark-highlight">Test Series</span></h2>
                     <p> Worked as a Front End Web Designer, responsible for making Mobile view Website</p>
                     <h3><b>Developed Website</b> : <a href="http://ec2-34-211-112-15.us-west-2.compute.amazonaws.com/"
@@ -115,13 +132,13 @@
             <div class="S5sliderdots">
                 <ul class="S5dots" role="tablist" style="display: flex;">
                     <li class="slick-active" id="dot-1" onclick="handleSliderDotClick(1)" role="presentation">
-                        <button type="button" role="tab" >
-                            
+                        <button type="button" role="tab">
+
                         </button>
                     </li>
                     <li role="presentation" id="dot-2" onclick="handleSliderDotClick(2)">
-                        <button type="button" role="tab" >
-                            
+                        <button type="button" role="tab">
+
                         </button>
                     </li>
                 </ul>
@@ -137,15 +154,23 @@
             </p>
             <div class="S6card">
                 <div class="S6box">
-                    <img src="./images/webImages/100.webp" alt="">
+                    <picture>
+                        <source srcset="./images/webImages/StudyInSchool.png">
+                        <source srcset="./images/webImages/StudyInSchool.jpg">
+                        <img src="./images/webImages/StudyInSchool.webp" alt="StudyInSchool">
+                    </picture>
                     <div class="S6overlay">
                         <h1>K-12 Schools</h1>
-                        <a href="https://studyinschoolsample.herokuapp.com/" target="_blank">View Web Site</a>
+                        <a href="https://studyinschool.com/ " target="_blank">View Website</a>
                     </div>
                 </div>
 
                 <div class="S6box">
-                    <img src="./images/webImages/28.webp" alt="" style="object-fit: contain; ">
+                    <picture>
+                        <source srcset="./images/webImages/test_series.png">
+                        <source srcset="./images/webImages/test_series.jpg">
+                        <img src="./images/webImages/test_series.webp" alt="test_series" style="object-fit: contain; ">
+                    </picture>
                     <div class="S6overlay">
                         <h1> Test Series</h1>
                         <a href="http://ec2-34-211-112-15.us-west-2.compute.amazonaws.com/" target="_blank">View
@@ -154,10 +179,14 @@
                 </div>
 
                 <div class="S6box">
-                    <img src="./images/webImages/23.webp" alt="">
+                    <picture>
+                        <source srcset="./images/webImages/medical_webinar.png">
+                        <source srcset="./images/webImages/medical_webinar.jpg">
+                        <img src="./images/webImages/medical_webinar.webp" alt="medical_webinar">
+                    </picture>
                     <div class="S6overlay">
-                        <h1>IBD Disease</h1>
-                        <a href="https://inflammatoryboweldisease.netlify.app/" target="_blank">View Website</a>
+                        <h1> Medical Webinar Website</h1>
+                        <a href="https://tankita236.github.io/DocMode/" target="_blank">View Website</a>
                     </div>
                 </div>
             </div>
@@ -200,7 +229,11 @@
 
     <!--Footer-->
     <footer>
-        <img src="./images/logo.webp" alt="">
+        <picture>
+            <source srcset="./images/logo.png">
+            <source srcset="./images/logo.jpg">
+            <img src="./images/logo.webp" alt="AT Creations">
+        </picture>
         <div>
             <button class="btn">About</button>
             <button class="btn">Creations</button>
@@ -209,7 +242,8 @@
         <div class="social-links">
             <a href="https://www.linkedin.com/in/tankita236/" target="_blank" class="linkedin"><i class="fa fa-linkedin"
                     aria-hidden="true"></i></a>
-            <a href="https://github.com/tankita236" target="_blank" class="git"><i class="fa fa-github " aria-hidden="true"></i></a>
+            <a href="https://github.com/tankita236" target="_blank" class="git"><i class="fa fa-github "
+                    aria-hidden="true"></i></a>
         </div>
 
     </footer>
