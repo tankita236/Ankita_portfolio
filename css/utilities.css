@@ -75,6 +75,8 @@ a {
     border: 2px solid var(--primary);
 }
 
+/* Secondary Buttons*/
+
 .btn-secondary {
     background: var(--ternary);
     border: 2px solid var(--ternary);
@@ -285,7 +287,7 @@ footer img {
     .dropdown {
         display: flex;
     }
-    footer{
+    footer {
         margin: 4rem auto 0;
     }
     footer div .btn {

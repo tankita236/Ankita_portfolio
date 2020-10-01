@@ -12,7 +12,7 @@
 .S1Container, .S2Container {
     width: 100%;
     margin: 0 auto;
-    padding: 4rem 0;
+    padding: 4rem 0 0;
     text-align: center;
 }
 
@@ -31,6 +31,7 @@
 .S1card, .S2card {
     width: 95%;
     margin: 0 auto;
+    padding-bottom: 4rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 3rem;
