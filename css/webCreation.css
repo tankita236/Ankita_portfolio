@@ -84,3 +84,51 @@
     margin: 0.5rem auto;
     color: var(--pure);
 }
+
+@media (min-width:992px) and (max-width:1199px) {
+    .S2 {
+        margin: 5rem auto;
+    }
+    .S1Container, .S2Container {
+        padding: 2rem 0 0;
+    }
+    .S1card, .S2card {
+        width: 90%;
+    }
+    footer {
+        margin: 5rem auto 0;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+     .S2 {
+    margin: 4rem auto;
+    }
+    .S1Container, .S2Container {
+        padding: 2rem 0 0;
+    }
+    .S1card, .S2card {
+        width: 93%;
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+    .S1box, .S1box {
+        height: 225px;
+    }
+    footer {
+        margin: 4rem auto 0;
+    }
+}
+
+@media (max-width:576px) {
+    .S2 {
+        margin: 4rem auto;
+    }
+    .S1Container, .S2Container {
+        padding: 2rem 0 0;
+    }
+    .S1card, .S2card {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+}
