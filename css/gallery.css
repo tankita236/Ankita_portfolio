@@ -11,15 +11,17 @@
 }
 
 .row {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding: 0 4px;
-  column-gap: 20px;
 }
 
 .column {
-  flex: 32%;
-  max-width: 32%;
+  -ms-flex: 25%;
+  flex: 25%;
+  max-width: 25%;
   padding: 0 4px;
 }
 
@@ -27,7 +29,6 @@
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
-  margin-bottom: 20px;
   border-radius: 5px;
   border: 1px solid #e0e0e0;
 }
@@ -37,8 +38,9 @@
     margin-top: 2rem;
   }
   .column {
-    flex: 31%;
-    column-gap: 10px;
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
   }
 }
 
@@ -47,6 +49,7 @@
     margin-top: 2rem;
   }
   .column {
+    -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
   }
