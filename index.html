@@ -23,7 +23,7 @@
             </a>
 
             <div class="options">
-                <a href="./index.html"><button class="btn dark-highlight">More Info</button></a>
+                <a href="./index.html"><button class="btn dark-highlight">About</button></a>
                 <a href="./webCreation.html"><button class="btn">Creations</button></a>
                 <a href="./paintings.html"><button class="btn ">Paintings</button></a>
                 <a href="./sketches.html"><button class="btn ">Sketches</button></a>
@@ -55,15 +55,22 @@
                 <div>I'm a Web <br> <span class="highlight">Designer & Developer</span> </div>
                 <p>
                     Tech Stack : HTML5, CSS3, Bootstrap and Javascript <br>
+                    Frameworks : ReactJS and Flask
                     Tools : Figma, Wordpress, Wix Editior, Coral Draw Git and GitHub
                 </p>
-                <a href="./webCreation.html"><button class="btn btn-primary2">View Gallery</button></a>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/tankita236/" target="_blank" class="linkedin"><i
+                            class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://github.com/tankita236" target="_blank" class="git"><i class="fa fa-github "
+                            aria-hidden="true"></i></a>
+                </div>
+                <a href="Ankita Tiwari Resume.pdf" target="_blank"><button class="btn btn-primary2">View
+                        Resume</button></a>
             </div>
-
         </div>
     </section>
 
-    <section id="about" class="S2">
+    <!-- <section id="about" class="S2">
         <div class="S2left">
             <picture>
                 <source srcset="./images/self2.webp">
@@ -73,9 +80,8 @@
         <div class="S2right">
             <h1>Hello, I'm Ankita Tiwari</h1>
             <p>
-                I am a Computer Engineering student from Bharati Vidyapeeth College of Engineering for Women's,
-                Pune.<br>
-                I am a Web Designer and Developer.
+                Professional Web Designer and Front-End Developer.<br>
+                Experienced more than 1 year with Web technology.
             </p>
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/tankita236/" target="_blank" class="linkedin"><i
@@ -84,19 +90,7 @@
                         aria-hidden="true"></i></a>
             </div>
         </div>
-    </section>
-
-    <section class="S4">
-        <h1>I am looking for Opportunities</h1>
-        <p>
-            I believe every organizations has concern about how to make themselves in reach to customers by
-            delivering the most comprehensive IT services. <br>
-            I seek opportunities where with my designing and development skill I can help the organization to
-            showcase there faciltities to their customers most effectively.
-        </p>
-        <a href="Ankita Tiwari Resume.pdf" target="_blank"><button class="btn btn-primary2">View Resume</button></a>
-
-    </section>
+    </section> -->
 
     <!-- S5 slider -->
     <section class="S5">
@@ -104,9 +98,25 @@
             <h1 class="Sheading"><span class="dark-highlight">My</span> Work Experience</h1>
             <p>I provide high standard clean responsive website for your business solutions</p>
             <div class="S5slider">
-                <!--Client 1-->
-                <div class="arrows prev" onclick="handleSliderDotClick(1)"></div>
+                <!-- <div class="arrows prev" onclick="handleSliderDotClick(1)"></div> -->
+                <!--Client 3-->
                 <div class="S5block" id="slider-content-1">
+                    <picture>
+                        <source srcset="./images/avatar.webp">
+                        <img src="./images/avatar.jpg" alt="Avatar">
+                    </picture>
+                    <h2> <b>Client</b> : <span class="dark-highlight">Appziatech PVT LTD</span></h2>
+                    <p>
+                        Web Designer and Front-End Web Developer <br>
+                        Tech Stack: HTML5, CSS3, SASS, Bootstrap and JavaScript <br>
+                        Tools : Figma, Bootstrap Templates and Github <br>
+                        <b>Working as Senior UI developer on <span class="dark-highlight">Bajafinserv WebSite</span></b>
+                    </p>
+                    <h3><b>Developed Website</b> : <a href="https://studyinschoolsample.herokuapp.com/"
+                            target="_blank"><span class="dark-highlight">StudyInSchool</span></a></h3>
+                </div>
+                <!--Client 2-->
+                <div class="S5block display-none" id="slider-content-2">
                     <picture>
                         <source srcset="./images/avatar.webp">
                         <img src="./images/avatar.jpg" alt="Avatar">
@@ -119,8 +129,8 @@
                     <h3><b>Developed Website</b> : <a href="https://studyinschoolsample.herokuapp.com/"
                             target="_blank"><span class="dark-highlight">StudyInSchool</span></a></h3>
                 </div>
-                <!-- Client 2 -->
-                <div class="S5block display-none" id="slider-content-2">
+                <!-- Client 1 -->
+                <div class="S5block display-none" id="slider-content-3">
                     <picture>
                         <source srcset="./images/avatar.webp">
                         <img src="./images/avatar.jpg" alt="Avatar">
@@ -131,23 +141,33 @@
                             target="_blank"><span class="dark-highlight">Test
                                 Series</span></a></h3>
                 </div>
-                <div class="arrows next" onclick="handleSliderDotClick(2)"></div>
+                <!-- <div class="arrows next" onclick="handleSliderDotClick(3)"></div> -->
             </div>
             <div class="S5sliderdots">
                 <ul class="S5dots" role="tablist" style="display: flex;">
                     <li class="slick-active" id="dot-1" onclick="handleSliderDotClick(1)" role="presentation">
-                        <button type="button" role="tab">
-
-                        </button>
+                        <button type="button" role="tab"> </button>
                     </li>
                     <li role="presentation" id="dot-2" onclick="handleSliderDotClick(2)">
-                        <button type="button" role="tab">
-
-                        </button>
+                        <button type="button" role="tab"> </button>
+                    </li>
+                    <li role="presentation" id="dot-3" onclick="handleSliderDotClick(3)">
+                        <button type="button" role="tab"> </button>
                     </li>
                 </ul>
             </div>
         </div>
+    </section>
+
+    <section class="S4">
+        <h1>FREELANCER</h1>
+        <p>
+            I believe every organizations has concern about how to make themselves in reach to customers by
+            delivering the most comprehensive IT services. <br>
+            I seek opportunities where with my designing and development skill I can help the organization to
+            showcase there faciltities to their customers most effectively.
+        </p>
+        <a href="./webCreation.html"><button class="btn btn-primary2">View Gallery</button></a>
     </section>
 
     <section id="creation" class="S6">
@@ -171,32 +191,31 @@
 
                 <div class="S6box">
                     <picture>
-                        <source srcset="./images/webImages/test_series.webp">
-                        <source srcset="./images/webImages/test_series.jpg">
-                        <img src="./images/webImages/test_series.png" alt="test_series" style="object-fit: contain; ">
+                        <source srcset="./images/webImages/orderUp.webp">
+                        <source srcset="./images/webImages/orderUp.jpg">
+                        <img src="./images/webImages/orderUp.png" alt="orderUp">
                     </picture>
                     <div class="S6overlay">
-                        <h1> Test Series</h1>
-                        <a href="http://ec2-34-211-112-15.us-west-2.compute.amazonaws.com/" target="_blank">View
+                        <h1> OrderUp - Food Delivery</h1>
+                        <a href="https://tankita236.github.io/OrderUp/" target="_blank">View
                             Website</a>
                     </div>
                 </div>
 
                 <div class="S6box">
                     <picture>
-                        <source srcset="./images/webImages/medical_webinar.webp">
-                        <source srcset="./images/webImages/medical_webinar.jpg">
-                        <img src="./images/webImages/medical_webinar.png" alt="medical_webinar">
+                        <source srcset="./images/webImages/windshine.webp">
+                        <source srcset="./images/webImages/windshine.jpg">
+                        <img src="./images/webImages/windshine.png" alt="WindShine">
                     </picture>
                     <div class="S6overlay">
-                        <h1> Medical Webinar Website</h1>
-                        <a href="https://medicalwebinar.netlify.app/" target="_blank">View Website</a>
+                        <h1> WindShine Website</h1>
+                        <a href="http://www.windshineenergy.com/" target="_blank">View Website</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
 
     <section id="art" class="S7">
         <div class="S7Container">
@@ -252,7 +271,7 @@
             <img src="./images/logo.png" alt="AT Creations">
         </picture>
         <div class="options">
-            <a href="./index.html"><button class="btn dark-highlight">More Info</button></a>
+            <a href="./index.html"><button class="btn dark-highlight">About</button></a>
             <a href="./webCreation.html"><button class="btn">Creations</button></a>
             <a href="./paintings.html"><button class="btn ">Paintings</button></a>
             <a href="./sketches.html"><button class="btn ">Sketches</button></a>
