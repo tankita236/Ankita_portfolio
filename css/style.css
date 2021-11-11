@@ -77,27 +77,67 @@
 }
 
 .S4 {
+    position: relative;
     margin: 100px auto;
-    padding: 7rem 0 12rem;
+    padding: 5rem 0 5rem;
     text-align: center;
     /* background with image and overlay on it */
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/camera.webp');
     color: var(--pure);
     /* clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 86%, 0 100%); */
 }
-
-.S4 h1 {
+.S4 .header-split {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.S4 .header-split h1 {
     padding: 0 20px;
     color: var(--primary);
-    margin-bottom: 1.5rem;
+}
+.S4 .header-split a{
+    position: absolute;
+    right: 135px;
 }
 
 .S4 p {
+    width: 80%;
+    margin: auto;
     padding: 0 20px;
     color: var(--pure);
     margin-bottom: 2.5rem;
 }
-
+.S4 .freelance-card-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+.S4 .freelance-card{
+    width: fit-content;
+    padding: 30px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    background-color: #bde4dc;
+    border-radius: 6px;
+}
+.S4 .freelance-card h3{
+    font-size: 24px;
+    color: black;
+    font-weight: 500;
+    /* margin-bottom: 25px; */
+}
+.S4 .freelance-card .freelance-card-link{
+    margin-left: 40px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: white;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
 .S5 {
     margin: 6.3rem 0;
 }
