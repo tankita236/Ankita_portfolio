@@ -1,4 +1,4 @@
-@import 'utilities.css';
+@import "utilities.css";
 .S1 {
     width: 100%;
     background: var(--darkText);
@@ -40,8 +40,8 @@
     color: var(--pure);
     margin-bottom: 0px;
 }
-.S1right-content .social-links{
-    margin-top:5px;
+.S1right-content .social-links {
+    margin-top: 5px;
     margin-bottom: 10px;
 }
 .S1right-content .social-links .fa-github {
@@ -82,7 +82,7 @@
     padding: 5rem 0 5rem;
     text-align: center;
     /* background with image and overlay on it */
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/camera.webp');
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/camera.webp");
     color: var(--pure);
     /* clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 86%, 0 100%); */
 }
@@ -96,7 +96,7 @@
     padding: 0 20px;
     color: var(--primary);
 }
-.S4 .header-split a{
+.S4 .header-split a {
     position: absolute;
     right: 135px;
 }
@@ -108,13 +108,13 @@
     color: var(--pure);
     margin-bottom: 2.5rem;
 }
-.S4 .freelance-card-wrapper{
+.S4 .freelance-card-wrapper {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 2.5rem;
 }
-.S4 .freelance-card{
+.S4 .freelance-card {
     width: fit-content;
     padding: 30px;
     display: flex;
@@ -123,14 +123,15 @@
     align-items: center;
     background-color: #bde4dc;
     border-radius: 6px;
+    margin-right: 20px;
 }
-.S4 .freelance-card h3{
+.S4 .freelance-card h3 {
     font-size: 24px;
     color: black;
     font-weight: 500;
     /* margin-bottom: 25px; */
 }
-.S4 .freelance-card .freelance-card-link{
+.S4 .freelance-card .freelance-card-link {
     margin-left: 40px;
     padding: 10px 15px;
     border-radius: 5px;
@@ -157,7 +158,7 @@
     padding: 0 20px;
 }
 
-.Sheading+p {
+.Sheading + p {
     text-align: center;
     font-size: 16px;
     color: var(--secondary);
@@ -254,7 +255,8 @@
     background: var(--lightText);
 }
 
-.S6Container, .S7Container {
+.S6Container,
+.S7Container {
     width: 100%;
     margin: 0 auto;
     padding: 3rem 0;
@@ -265,11 +267,12 @@
     color: var(--pure);
 }
 
-.S6Container .Sheading+p {
+.S6Container .Sheading + p {
     color: var(--pure);
 }
 
-.S6card, .S7card {
+.S6card,
+.S7card {
     width: 80%;
     margin: 0 auto;
     display: grid;
@@ -278,7 +281,8 @@
     row-gap: 3rem;
 }
 
-.S6box, .S7box {
+.S6box,
+.S7box {
     position: relative;
     border-radius: 5px;
     height: 250px;
@@ -286,12 +290,14 @@
     overflow: hidden;
 }
 
-.S6box img, .S7box img {
+.S6box img,
+.S7box img {
     width: 100%;
     height: 100%;
 }
 
-.S6overlay, .S7overlay {
+.S6overlay,
+.S7overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -310,31 +316,35 @@
     background: rgba(113, 5, 156, 0.5);
 }
 
-.S6overlay:hover, .S7overlay:hover {
+.S6overlay:hover,
+.S7overlay:hover {
     opacity: 1;
 }
 
-.S6overlay:hover h1, .S6overlay:hover a {
+.S6overlay:hover h1,
+.S6overlay:hover a {
     font-weight: 550;
     margin: 0.5rem auto;
     color: var(--darkText);
 }
 
-.S7overlay:hover h1, .S7overlay:hover a {
+.S7overlay:hover h1,
+.S7overlay:hover a {
     margin: 0.5rem auto;
     color: var(--pure);
 }
 
-@media (min-width:992px) and (max-width:1199px) {
+@media (min-width: 992px) and (max-width: 1199px) {
     .S5slider {
         width: 60%;
     }
-    .S6card, .S7card {
+    .S6card,
+    .S7card {
         width: 90%;
     }
 }
 
-@media (min-width:768px) and (max-width:991px) {
+@media (min-width: 768px) and (max-width: 991px) {
     .S1 {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 92%, 0 100%);
     }
@@ -344,7 +354,6 @@
     .S1right {
         width: 50%;
         margin-left: 0;
-        ;
     }
     .S2 {
         width: 80%;
@@ -355,7 +364,8 @@
         padding: 5rem 0 7rem;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 92%, 0 100%);
     }
-    .S5, .S7 {
+    .S5,
+    .S7 {
         margin: 4.3rem auto;
     }
     .S5slider {
@@ -365,17 +375,19 @@
         clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 92%, 0 100%);
         margin: 4.3rem auto;
     }
-    .S6card, .S7card {
+    .S6card,
+    .S7card {
         width: 93%;
         column-gap: 2rem;
         row-gap: 2rem;
     }
-    .S6box, .S7box {
+    .S6box,
+    .S7box {
         height: 225px;
     }
 }
 
-@media (max-width:576px) {
+@media (max-width: 576px) {
     .S1 {
         flex-direction: column;
         padding-bottom: 2rem;
@@ -388,7 +400,7 @@
     }
     .S1right {
         width: 100%;
-        height: 650px;
+        height: 760px;
         position: absolute;
         margin: 0;
         margin-top: 0;
@@ -414,7 +426,38 @@
         padding: 4rem 0 5rem;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 95%, 0 100%);
     }
-    .S5, .S7 {
+    .S4 .header-split {
+        flex-direction: column;
+    }
+    .S4 .header-split a {
+        position: static;
+        margin-top: 20px;
+    }
+    .S4 p {
+        width: 100%;
+    }
+    .S4 .freelance-card-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .S4 .freelance-card {
+        width: 90%;
+        padding: 20px;
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+    .S4 .freelance-card h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .S4 .freelance-card .freelance-card-link {
+        margin-left: 0;
+    }
+    .S4 .freelance-card {
+        margin-right: 0;
+    }
+    .S5,
+    .S7 {
         margin: 4rem auto;
     }
     .S5slider {
@@ -428,7 +471,8 @@
         padding: 0 0 4rem;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 79% 96%, 0 100%);
     }
-    .S6card, .S7card {
+    .S6card,
+    .S7card {
         width: 90%;
         grid-template-columns: 1fr;
     }
