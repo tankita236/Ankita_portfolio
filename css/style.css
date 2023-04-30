@@ -1,6 +1,7 @@
 @import "utilities.css";
 .S1 {
     width: 100%;
+    height: fit-content;
     background: var(--darkText);
     display: flex;
     justify-content: center;
@@ -22,11 +23,13 @@
 }
 
 .S1right-content {
-    margin-top: 7.5rem;
+    /* margin-top: 7.5rem; */
+    padding: 45px 0 80px;
 }
 
 .S1right-content h2 {
     color: var(--primary);
+    font-size: larger;
 }
 
 .S1right-content div {
@@ -40,6 +43,33 @@
     color: var(--pure);
     margin-bottom: 0px;
 }
+.S1right-content p br{
+    margin-bottom: 20px;
+}
+.S1right-content p span{
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: underline;
+    color: var(--pure);
+}
+.S1right-content .mybelieve{
+    width: 400px;
+    margin-left: 0;
+    font-size: 14px;
+    letter-spacing: 0.1px;
+    color: var(--pure);
+    border-left: 1px solid var(--lightText);
+    padding-left: 16px;
+}
+.S1right-content .mybelieve h3{
+    width: 400px;
+    margin-left: 0;
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    padding-bottom: 8px;
+    color: var(--pure);
+}
+
 .S1right-content .social-links {
     margin-top: 5px;
     margin-bottom: 10px;
@@ -252,13 +282,13 @@
     clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 92%, 0 100%);
 }
 
-.S7 {
+.S7,.S8 {
     margin: 6.3rem auto;
     background: var(--lightText);
 }
 
 .S6Container,
-.S7Container {
+.S7Container, .S8Container {
     width: 100%;
     margin: 0 auto;
     padding: 3rem 0;
@@ -274,7 +304,8 @@
 }
 
 .S6card,
-.S7card {
+.S7card,
+.S8card {
     width: 80%;
     margin: 0 auto;
     display: grid;
@@ -284,22 +315,31 @@
 }
 
 .S6box,
-.S7box {
+.S7box,
+.S8box {
     position: relative;
     border-radius: 5px;
     height: 250px;
     background-color: #fff;
     overflow: hidden;
 }
+.S8box {
+    height: 400px;
+}
 
 .S6box img,
-.S7box img {
+.S7box img,
+.S8box img  {
     width: 100%;
     height: 100%;
 }
+.S8box img  {
+    object-fit: contain;
+}
 
 .S6overlay,
-.S7overlay {
+.S7overlay,
+.S8overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -318,8 +358,13 @@
     background: rgba(113, 5, 156, 0.5);
 }
 
+.S8overlay  {
+    background: rgba(25, 0, 35, 0.8);
+}
+
 .S6overlay:hover,
-.S7overlay:hover {
+.S7overlay:hover,
+.S8overlay:hover {
     opacity: 1;
 }
 
@@ -331,9 +376,15 @@
 }
 
 .S7overlay:hover h1,
-.S7overlay:hover a {
+.S7overlay:hover a ,
+.S8overlay:hover h1,
+.S8overlay:hover a {
     margin: 0.5rem auto;
     color: var(--pure);
+}
+
+.S7overlay:hover a {
+    font-size: 24px;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -344,7 +395,8 @@
         width: 60%;
     }
     .S6card,
-    .S7card {
+    .S7card,
+    .S8card {
         width: 90%;
     }
 }
@@ -380,7 +432,8 @@
         width: 40%;
     }
     .S5,
-    .S7 {
+    .S7,
+    .S8 {
         margin: 4.3rem auto;
     }
     .S5slider {
@@ -391,13 +444,15 @@
         margin: 4.3rem auto;
     }
     .S6card,
-    .S7card {
+    .S7card,
+    .S8card  {
         width: 93%;
         column-gap: 2rem;
         row-gap: 2rem;
     }
     .S6box,
-    .S7box {
+    .S7box,
+    .S8box {
         height: 225px;
     }
 }
@@ -468,7 +523,8 @@
         margin-right: 0;
     }
     .S5,
-    .S7 {
+    .S7,
+    .S8 {
         margin: 4rem auto;
     }
     .S5slider {
@@ -483,7 +539,8 @@
         clip-path: polygon(0 0, 100% 0, 100% 100%, 79% 96%, 0 100%);
     }
     .S6card,
-    .S7card {
+    .S7card,
+    .S8card {
         width: 90%;
         grid-template-columns: 1fr;
     }
