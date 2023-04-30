@@ -1,74 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Ankita Portfolio</title>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ankita Portfolio</title>
     <!--CSS stylesheet-->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
     <!-- google fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap" rel="stylesheet">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-
+  <body>
+      <!-- Header -->
     <header>
-        <nav id="main-nav">
-            <a href="./index.html" class="brand">
-                <picture>
-                    <source srcset="./images/logo.webp">
-                    <source srcset="./images/logo.jpg">
-                    <img src="./images/logo.png" alt="AT Creations">
-                </picture>
-            </a>
+      <nav id="main-nav">
+        <a href="./index.html" class="brand">
+          <picture>
+            <source srcset="./images/logo.webp" />
+            <source srcset="./images/logo.jpg" />
+            <img src="./images/logo.png" alt="AT Creations" />
+          </picture>
+        </a>
 
-            <div class="options">
-                <a href="./index.html"><button class="btn dark-highlight">About</button></a>
-                <a href="./webCreation.html"><button class="btn">Creations</button></a>
-                <!-- <a href="./uxDesigns.html"><button class="btn">UX/UI Designs</button></a> -->
-                <a href="./paintings.html"><button class="btn ">Paintings</button></a>
-                <a href="./sketches.html"><button class="btn ">Sketches</button></a>
-                <a href="./photographs.html"><button class="btn ">Photographs</button></a>
-            </div>
-            <div class="dropdown">
-                <button onclick="myFunction(event)" class="dropdown-btn toggle"><i class="fas fa-bars"></i></button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="./index.html">About</a>
-                    <a href="./webCreation.html">Creations</a>
-                    <a href="./paintings.html">Paintings</a>
-                    <a href="./sketches.html">Sketches</a>
-                    <a href="./photographs.html">Photographs</a>
-                </div>
-            </div>
-        </nav>
+        <div class="options">
+          <a href="./index.html"
+            ><button class="btn dark-highlight">About</button></a
+          >
+          <a href="./uxDesigns.html"
+            ><button class="btn">UX/UI Designs</button></a
+          >
+          <a href="./webCreation.html"
+            ><button class="btn">Developments</button></a
+          >
+          <a href="./paintings.html"><button class="btn">Paintings</button></a>
+          <a href="./sketches.html"><button class="btn">Sketches</button></a>
+          <a href="./photographs.html"
+            ><button class="btn">Photographs</button></a
+          >
+        </div>
+        <div class="dropdown">
+          <button onclick="myFunction(event)" class="dropdown-btn toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="./index.html">About</a>
+            <a href="./uxDesigns.html"
+              ><button class="btn">UX/UI Designs</button></a
+            >
+            <a href="./webCreation.html">Developments</a>
+            <a href="./paintings.html">Paintings</a>
+            <a href="./sketches.html">Sketches</a>
+            <a href="./photographs.html">Photographs</a>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <section class="S1">
-        <div class="S1left ">
-            <picture>
-                <source srcset="./images/self.webp">
-                <img src="./images/self.png" alt="Ankita Tiwari">
-            </picture>
+      <div class="S1left">
+        <picture>
+          <source srcset="./images/self.webp" />
+          <img src="./images/self.png" alt="Ankita Tiwari" />
+        </picture>
+      </div>
+      <div class="S1right">
+        <div class="S1right-content">
+          <h2>Ankita Tiwari</h2>
+          <div>
+            I'm a UX / UI <br />
+            <span class="highlight">Designer & Developer</span>
+          </div>
+
+          <div class="mybelieve">
+            <h3>I believe</h3>
+            The world is constantly evolving thanks to designers centering their
+            process around the user. Creatives design an experience through a
+            series of touch-points that form the framework to have a meaningful
+            interaction. It starts with understanding what the user needs, and
+            ideating an innovative solution to fulfill it.
+          </div>
+
+          <!-- Skills -->
+          <p>
+            <span>Designing Tools</span> : Figma, AdobeXD, Coral Draw <br />
+            <span>Developer Tech Stack</span> : HTML5, CSS3, Bootstrap <br />
+            <span>Tools</span> : Wordpress, Wix Editior, Git and GitHub
+            <!-- Frameworks : ReactJS and Flask <br> -->
+          </p>
+
+          <div class="social-links">
+            <a
+              href="https://www.linkedin.com/in/tankita236/"
+              target="_blank"
+              class="linkedin"
+              ><i class="fa fa-linkedin" aria-hidden="true"></i
+            ></a>
+
+            <a href="https://github.com/tankita236" target="_blank" class="git"
+              ><i class="fa fa-github" aria-hidden="true"></i
+            ></a>
+          </div>
+          <a href="Ankita Tiwari Resume.pdf" target="_blank"
+            ><button class="btn btn-primary2">View Resume</button></a
+          >
         </div>
-        <div class="S1right">
-            <div class="S1right-content">
-                <h2>Ankita Tiwari</h2>
-                <div>I'm a UX/UI <br> <span class="highlight">Designer & Developer</span> </div>
-                <p>
-                    Tech Stack : HTML5, CSS3, Bootstrap and Javascript <br>
-                    Frameworks : ReactJS and Flask <br>
-                    Tools : Figma, Wordpress, Wix Editior, Coral Draw, Git and GitHub
-                </p>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/tankita236/" target="_blank" class="linkedin"><i
-                            class="fa fa-linkedin" aria-hidden="true"></i></a>
-                    <a href="https://github.com/tankita236" target="_blank" class="git"><i class="fa fa-github "
-                            aria-hidden="true"></i></a>
-                </div>
-                <a href="Ankita Tiwari Resume.pdf" target="_blank"><button class="btn btn-primary2">View
-                        Resume</button></a>
-            </div>
-        </div>
+      </div>
     </section>
 
     <!-- <section id="about" class="S2">
@@ -93,256 +131,226 @@
         </div>
     </section> -->
 
-    <!-- S5 slider -->
-    <section class="S5">
-        <div class="S5Container">
-            <h1 class="Sheading"><span class="dark-highlight">My</span> Work Experience</h1>
-            <p>I provide high standard clean responsive website for your business solutions</p>
-            <div class="S5slider">
-                <!-- <div class="arrows prev" onclick="handleSliderDotClick(1)"></div> -->
-
-                <!--Client 3-->
-                <div class="S5block" id="slider-content-1">
-                    <picture>
-                        <source srcset="./images/avatar.webp">
-                        <img src="./images/avatar.jpg" alt="Avatar">
-                    </picture>
-                    <h2> <b>Client</b> : <span class="dark-highlight">iLRNU INC</span></h2>
-                    <p>
-                        Web Designer and Front-End Web Developer <br>
-                        Tech Stack: HTML5, CSS3, Tailwind CSS, JavaScript and ReactJS <br>
-                        Tools : Figma and Github <br>
-                    </p>
-                    <h3><b>Developed Website</b> : <a href="https://www.ilrnu.com/home" target="_blank"><span
-                                class="dark-highlight">iLRNU</span></a></h3>
-
-
-                </div>
-                <!--Client 2-->
-                <div class="S5block display-none" id="slider-content-2">
-                    <picture>
-                        <source srcset="./images/avatar.webp">
-                        <img src="./images/avatar.jpg" alt="Avatar">
-                    </picture>
-                    <h2> <b>Client</b> : <span class="dark-highlight">Appziatech PVT LTD</span></h2>
-                    <p>
-                        Web Designer and Front-End Web Developer <br>
-                        Tech Stack: HTML5, CSS3, SASS, Bootstrap and JavaScript <br>
-                        Tools : Figma, Bootstrap Templates and Github <br>
-                        <b>Working as Senior UI developer on <span class="dark-highlight">Bajafinserv WebSite</span></b>
-                    </p>
-                    <h3><b>Developed Website</b> : <a href="https://studyinschoolsample.herokuapp.com/"
-                            target="_blank"><span class="dark-highlight">StudyInSchool</span></a></h3>
-
-
-                </div>
-                <!-- Client 1 -->
-                <div class="S5block display-none" id="slider-content-3">
-                    <picture>
-                        <source srcset="./images/avatar.webp">
-                        <img src="./images/avatar.jpg" alt="Avatar">
-                    </picture>
-                    <h2> <b>Client</b> : <span class="dark-highlight">Krux Prokon PVT LTD</span></h2>
-                    <p>
-                        Web Designer and Front-End Web Developer <br>
-                        Used Figma, HTML5, CSS3 and JavaScript
-                    </p>
-                    <h3><b>Developed Website</b> : <a href="https://studyinschoolsample.herokuapp.com/"
-                            target="_blank"><span class="dark-highlight">StudyInSchool</span></a></h3>
-
-
-                </div>
-                <!-- 
-                    <picture>
-                        <source srcset="./images/avatar.webp">
-                        <img src="./images/avatar.jpg" alt="Avatar">
-                    </picture>
-                    <h2> <b>Client</b> : <span class="dark-highlight">Test Series</span></h2>
-                    <p> Worked as a Front End Web Designer, responsible for making Mobile view Website</p>
-                    <h3><b>Developed Website</b> : <a href="http://ec2-34-211-112-15.us-west-2.compute.amazonaws.com/"
-                            target="_blank"><span class="dark-highlight">Test
-                                Series</span></a></h3>
-                 -->
-                <!-- <div class="arrows next" onclick="handleSliderDotClick(3)"></div> -->
-            </div>
-            <div class="S5sliderdots">
-                <ul class="S5dots" role="tablist" style="display: flex;">
-                    <li class="slick-active" id="dot-1" onclick="handleSliderDotClick(1)" role="presentation">
-                        <button type="button" role="tab"> </button>
-                    </li>
-                    <li role="presentation" id="dot-2" onclick="handleSliderDotClick(2)">
-                        <button type="button" role="tab"> </button>
-                    </li>
-                    <li role="presentation" id="dot-3" onclick="handleSliderDotClick(3)">
-                        <button type="button" role="tab"> </button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="S4">
-        <div class="header-split">
-            <h1>FREELANCER / CONSULTANT</h1>
-            <a href="./webCreation.html"><button class="btn btn-primary2">My Works</button></a>
-        </div>
+    <!-- S8 : UX/UI Desigings -->
+    <section id="uxDesign" class="S8">
+      <div class="S8Container">
+        <h1 class="Sheading"><span class="dark-highlight">My</span> UX/UI Designings</h1>
         <p>
-            I believe every organizations has concern about how to make themselves in reach to customers by
-            delivering the most comprehensive IT services. <br>
-            I seek opportunities where with my designing and development skill I can help the organization to
-            showcase there faciltities to their customers most effectively.
+          My Passion for designing was born from my hobby of being creative.
         </p>
-        <div class="freelance-card-wrapper">
-            <div class="freelance-card">
-                <h3>FraserHosptiality Project</h3>
-                <a href="https://www.frasershospitality.com/en/" target="_blank">
-                    <div class="freelance-card-link">View website</div>
-                </a>
+        <div class="S8card">
+          <div class="S8box">
+            <picture>
+              <!-- <source
+                srcset="./images/hobby_images/paintings/blue_flower.webp"
+              />
+              <source
+                srcset="./images/hobby_images/paintings/blue_flower.jpg"
+              /> -->
+              <img
+                src="./images/uxDesigns/ArtisticGalleryAppFlow.png"
+                alt="ArtisticGalleryAppFlow"
+              />
+            </picture>
+            <div class="S8overlay">
+              <h1>Artistic Gallery<br> Mobile App Flow</h1>
+              <a target="_blank" href="https://www.figma.com/proto/K50HIpR8Y4HGhKgWWIGRrQ/Untitled?page-id=116%3A4250&type=design&node-id=116-4308&viewport=553%2C-1732%2C0.45&scaling=scale-down&starting-point-node-id=116%3A4308">View Prototype </a>
             </div>
-            <div class="freelance-card">
-                <h3>BajaFinserv Project</h3>
-                <a href="https://www.bajajfinserv.in/" target="_blank">
-                    <div class="freelance-card-link">View website</div>
-                </a>
+          </div>
+          
+          <div class="S8box">
+            <picture>
+              <!-- <source
+                srcset="./images/hobby_images/photography/sunset_cloud_1.webp"
+              />
+              <source
+                srcset="./images/hobby_images/photography/sunset_cloud_1.jpg"
+              /> -->
+              <img
+                src="./images/uxDesigns/Screenshot 2023-04-30 at 7.39.49 PM.png"
+                alt="Empoppa_ParentChildCompassion"
+              />
+            </picture>
+            <div class="S8overlay">
+              <h1>Empoppa <br> Parent Child Compassion</h1>
+              <a target="_blank" href="https://www.figma.com/proto/CRTSVrXrFn5eMdANlpL4QW/Empoppo-hi-fi?node-id=260-4&scaling=scale-down&page-id=260%3A2&starting-point-node-id=260%3A4"> View Prototype </a>
             </div>
-            <div class="freelance-card">
-                <h3>GEL CR Project</h3>
-                <a href="https://www.greateasternlife.com/sg/en/personal-insurance.html" target="_blank">
-                    <div class="freelance-card-link">View website</div>
-                </a>
+          </div>
+
+          <div class="S8box">
+            <picture>
+              <!-- <source srcset="./images/hobby_images/sketches/fairy.webp" /> -->
+              <!-- <source srcset="./images/hobby_images/sketches/fairy.jpg" /> -->
+              <img src="./images/uxDesigns/Screenshot 2023-04-30 at 7.46.50 PM.png" alt="ArtisticGalleryWebFlow" />
+            </picture>
+            <div class="S8overlay">
+                <h1>Artistic Gallery<br> Website Flow</h1>
+                <a target="_blank" href="https://www.figma.com/proto/K50HIpR8Y4HGhKgWWIGRrQ/Untitled?page-id=205%3A11196&type=design&node-id=205-11197&viewport=4048%2C879%2C0.35&scaling=min-zoom&starting-point-node-id=205%3A11197">View Prototype </a>
             </div>
-            <div class="freelance-card">
-                <h3>Audi China</h3>
-                <a href="https://www.audichina.cn/cn/brand/en.html" target="_blank">
-                    <div class="freelance-card-link">View website <br/> <small>(Upgrading Website - In progress)</small></div>
-                </a>
-            </div>
+          </div>
         </div>
+      </div>
     </section>
 
+    <!-- S6 : My Creations/Work -->
     <section id="creation" class="S6">
-        <div class="S6Container">
-            <h1 class="Sheading"><span class="highlight">My</span> Creations</h1>
-            <p>
-                My work starting from a Learner to Professional to achieve high standard clean responsive websites
-            </p>
-            <div class="S6card">
-                <div class="S6box">
-                    <picture>
-                        <source srcset="./images/webImages/StudyInSchool.webp">
-                        <source srcset="./images/webImages/StudyInSchool.jpg">
-                        <img src="./images/webImages/StudyInSchool.png" alt="StudyInSchool">
-                    </picture>
-                    <div class="S6overlay">
-                        <h1>K-12 Schools</h1>
-                        <a href="https://studyinschool.com/ " target="_blank">View Website</a>
-                    </div>
-                </div>
-
-                <div class="S6box">
-                    <picture>
-                        <source srcset="./images/webImages/orderUp.webp">
-                        <source srcset="./images/webImages/orderUp.jpg">
-                        <img src="./images/webImages/orderUp.png" alt="orderUp">
-                    </picture>
-                    <div class="S6overlay">
-                        <h1> OrderUp - Food Delivery</h1>
-                        <a href="https://tankita236.github.io/OrderUp/" target="_blank">View
-                            Website</a>
-                    </div>
-                </div>
-
-                <div class="S6box">
-                    <picture>
-                        <source srcset="./images/webImages/windshine.webp">
-                        <source srcset="./images/webImages/windshine.jpg">
-                        <img src="./images/webImages/windshine.png" alt="WindShine">
-                    </picture>
-                    <div class="S6overlay">
-                        <h1> WindShine Website</h1>
-                        <a href="http://www.windshineenergy.com/" target="_blank">View Website</a>
-                    </div>
-                </div>
+      <div class="S6Container">
+        <h1 class="Sheading"><span class="highlight">My</span> Web Development</h1>
+        <p>
+          My work starting from a Learner to Professional to achieve high
+          standard clean responsive websites
+        </p>
+        <div class="S6card">
+          <div class="S6box">
+            <picture>
+              <source srcset="./images/webImages/StudyInSchool.webp" />
+              <source srcset="./images/webImages/StudyInSchool.jpg" />
+              <img
+                src="./images/webImages/StudyInSchool.png"
+                alt="StudyInSchool"
+              />
+            </picture>
+            <div class="S6overlay">
+              <h1>K-12 Schools</h1>
+              <a href="https://studyinschool.com/ " target="_blank"
+                >View Website</a
+              >
             </div>
+          </div>
+
+          <div class="S6box">
+            <picture>
+              <source srcset="./images/webImages/orderUp.webp" />
+              <source srcset="./images/webImages/orderUp.jpg" />
+              <img src="./images/webImages/orderUp.png" alt="orderUp" />
+            </picture>
+            <div class="S6overlay">
+              <h1>OrderUp - Food Delivery</h1>
+              <a href="https://tankita236.github.io/OrderUp/" target="_blank"
+                >View Website</a
+              >
+            </div>
+          </div>
+
+          <div class="S6box">
+            <picture>
+              <source srcset="./images/webImages/windshine.webp" />
+              <source srcset="./images/webImages/windshine.jpg" />
+              <img src="./images/webImages/windshine.png" alt="WindShine" />
+            </picture>
+            <div class="S6overlay">
+              <h1>WindShine Website</h1>
+              <a href="http://www.windshineenergy.com/" target="_blank"
+                >View Website</a
+              >
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
+    <!-- S7 : My Art -->
     <section id="art" class="S7">
-        <div class="S7Container">
-            <h1 class="Sheading"><span class="dark-highlight">My</span> Art</h1>
-            <p>
-                Each skills are developed due to some hobby tough we never realize it, my Designs born through
-                my Art
-            </p>
-            <div class="S7card">
-                <div class="S7box">
-                    <picture>
-                        <source srcset="./images/hobby_images/paintings/blue_flower.webp">
-                        <source srcset="./images/hobby_images/paintings/blue_flower.jpg">
-                        <img src="./images/hobby_images/paintings/blue_flower.png" alt="blue_flower">
-                    </picture>
-                    <div class="S7overlay">
-                        <h1>Paintings</h1>
-                        <a href=""> </a>
-                    </div>
-                </div>
-                <div class="S7box">
-                    <picture>
-                        <source srcset="./images/hobby_images/sketches/fairy.webp">
-                        <source srcset="./images/hobby_images/sketches/fairy.jpg">
-                        <img src="./images/hobby_images/sketches/fairy.png" alt="Fairy">
-                    </picture>
-                    <div class="S7overlay">
-                        <h1>Sketches</h1>
-                        <a href=""> </a>
-                    </div>
-                </div>
-                <div class="S7box">
-                    <picture>
-                        <source srcset="./images/hobby_images/photography/sunset_cloud_1.webp">
-                        <source srcset="./images/hobby_images/photography/sunset_cloud_1.jpg">
-                        <img src="./images/hobby_images/photography/sunset_cloud_1.png" alt="sunset_cloud_1">
-                    </picture>
-                    <div class="S7overlay">
-                        <h1>Photography</h1>
-                        <a href=""> </a>
-                    </div>
-                </div>
+      <div class="S7Container">
+        <h1 class="Sheading"><span class="dark-highlight">My</span> Art</h1>
+        <p>
+          Each skills are developed due to some hobby tough we never realize it,
+          my Designs born through my Art
+        </p>
+        <div class="S7card">
+          <div class="S7box">
+            <picture>
+              <source
+                srcset="./images/hobby_images/paintings/blue_flower.webp"
+              />
+              <source
+                srcset="./images/hobby_images/paintings/blue_flower.jpg"
+              />
+              <img
+                src="./images/hobby_images/paintings/blue_flower.png"
+                alt="blue_flower"
+              />
+            </picture>
+            <div class="S7overlay">
+              <h1>Paintings</h1>
+              <a href=""> </a>
             </div>
+          </div>
+          <div class="S7box">
+            <picture>
+              <source srcset="./images/hobby_images/sketches/fairy.webp" />
+              <source srcset="./images/hobby_images/sketches/fairy.jpg" />
+              <img src="./images/hobby_images/sketches/fairy.png" alt="Fairy" />
+            </picture>
+            <div class="S7overlay">
+              <h1>Sketches</h1>
+              <a href=""> </a>
+            </div>
+          </div>
+          <div class="S7box">
+            <picture>
+              <source
+                srcset="./images/hobby_images/photography/sunset_cloud_1.webp"
+              />
+              <source
+                srcset="./images/hobby_images/photography/sunset_cloud_1.jpg"
+              />
+              <img
+                src="./images/hobby_images/photography/sunset_cloud_1.png"
+                alt="sunset_cloud_1"
+              />
+            </picture>
+            <div class="S7overlay">
+              <h1>Photography</h1>
+              <a href=""> </a>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!--Footer-->
     <footer>
-        <picture>
-            <source srcset="./images/logo.webp">
-            <source srcset="./images/logo.jpg">
+      <picture>
+        <source srcset="./images/logo.webp" />
+        <source srcset="./images/logo.jpg" />
 
-            <img src="./images/logo.png" alt="AT Creations">
-        </picture>
-        <div class="options">
-            <a href="./index.html"><button class="btn dark-highlight">About</button></a>
-            <a href="./webCreation.html"><button class="btn">Creations</button></a>
-            <a href="./paintings.html"><button class="btn ">Paintings</button></a>
-            <a href="./sketches.html"><button class="btn ">Sketches</button></a>
-            <a href="./photographs.html"><button class="btn ">Photographs</button></a>
-        </div>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/tankita236/" target="_blank" class="linkedin"><i class="fa fa-linkedin"
-                    aria-hidden="true"></i></a>
-            <a href="https://github.com/tankita236" target="_blank" class="git"><i class="fa fa-github "
-                    aria-hidden="true"></i></a>
-        </div>
-
+        <img src="./images/logo.png" alt="AT Creations" />
+      </picture>
+      <div class="options">
+        <a href="./index.html"
+          ><button class="btn dark-highlight">About</button></a
+        >
+        <a href="./uxDesigns.html"
+          ><button class="btn">UX/UI Designs</button></a
+        >
+        <a href="./webCreation.html"
+          ><button class="btn">Developments</button></a
+        >
+        <a href="./paintings.html"><button class="btn">Paintings</button></a>
+        <a href="./sketches.html"><button class="btn">Sketches</button></a>
+        <!-- <a href="./photographs.html"><button class="btn ">Photographs</button></a> -->
+      </div>
+      <div class="social-links">
+        <a
+          href="https://www.linkedin.com/in/tankita236/"
+          target="_blank"
+          class="linkedin"
+          ><i class="fa fa-linkedin" aria-hidden="true"></i
+        ></a>
+        <a href="https://github.com/tankita236" target="_blank" class="git"
+          ><i class="fa fa-github" aria-hidden="true"></i
+        ></a>
+      </div>
     </footer>
 
     <!--Font awesosme-->
-    <script src="https://kit.fontawesome.com/7bc2a2c594.js" crossorigin="anonymous"></script>
-
+    <script
+      src="https://kit.fontawesome.com/7bc2a2c594.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!--LInking my JS file-->
     <script type="text/javascript" src="./js/app.js"></script>
-
-</body>
-
+  </body>
 </html>

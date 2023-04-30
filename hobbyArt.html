@@ -11,32 +11,50 @@
 
 <body>
 
-    <header>
+       <!-- Header -->
+       <header>
         <nav id="main-nav">
-            <a href="./index.html" class="brand">
-                <picture>
-                    <source srcset="./images/logo.webp">
-                    <source srcset="./images/logo.jpg">
-                    <img src="./images/logo.png" alt="AT Creations">
-                </picture>
-            </a>
-
-            <div class="options">
-                <a href="./index.html"><button class="btn">About</button></a>
-                <a href="./webCreation.html"><button class="btn">Creations</button></a>
-                <a href="./hobbyArt.html"><button class="btn dark-highlight">Art</button></a>
+          <a href="./index.html" class="brand">
+            <picture>
+              <source srcset="./images/logo.webp" />
+              <source srcset="./images/logo.jpg" />
+              <img src="./images/logo.png" alt="AT Creations" />
+            </picture>
+          </a>
+  
+          <div class="options">
+            <a href="./index.html"
+              ><button class="btn dark-highlight">About</button></a
+            >
+            <a href="./uxDesigns.html"
+              ><button class="btn">UX/UI Designs</button></a
+            >
+            <a href="./webCreation.html"
+              ><button class="btn">Developments</button></a
+            >
+            <a href="./paintings.html"><button class="btn">Paintings</button></a>
+            <a href="./sketches.html"><button class="btn">Sketches</button></a>
+            <a href="./photographs.html"
+              ><button class="btn">Photographs</button></a
+            >
+          </div>
+          <div class="dropdown">
+            <button onclick="myFunction(event)" class="dropdown-btn toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="./index.html">About</a>
+              <a href="./uxDesigns.html"
+                ><button class="btn">UX/UI Designs</button></a
+              >
+              <a href="./webCreation.html">Developments</a>
+              <a href="./paintings.html">Paintings</a>
+              <a href="./sketches.html">Sketches</a>
+              <a href="./photographs.html">Photographs</a>
             </div>
-
-            <div class="dropdown">
-                <button onclick="myFunction(event)" class="dropdown-btn toggle"><i class="fas fa-bars"></i></button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="./index.html">About</a>
-                    <a href="./webCreation.html">Creations</a>
-                    <a href="./hobbyArt.html">Art</a>
-                </div>
-            </div>
+          </div>
         </nav>
-    </header>
+      </header>
 
     <section class="S1">
         <div class="S1Container">
@@ -432,26 +450,40 @@
         </div>
     </section>
 
-    <!--Footer-->
-    <footer>
+       <!--Footer-->
+       <footer>
         <picture>
-            <source srcset="./images/logo.webp">
-            <source srcset="./images/logo.jpg">
-            <img src="./images/logo.png" alt="AT Creations">
+          <source srcset="./images/logo.webp" />
+          <source srcset="./images/logo.jpg" />
+  
+          <img src="./images/logo.png" alt="AT Creations" />
         </picture>
-        <div>
-            <button class="btn">About</button>
-            <button class="btn">Creations</button>
-            <button class="btn">Art</button>
+        <div class="options">
+          <a href="./index.html"
+            ><button class="btn dark-highlight">About</button></a
+          >
+          <a href="./uxDesigns.html"
+            ><button class="btn">UX/UI Designs</button></a
+          >
+          <a href="./webCreation.html"
+            ><button class="btn">Developments</button></a
+          >
+          <a href="./paintings.html"><button class="btn">Paintings</button></a>
+          <a href="./sketches.html"><button class="btn">Sketches</button></a>
+          <!-- <a href="./photographs.html"><button class="btn ">Photographs</button></a> -->
         </div>
         <div class="social-links">
-            <a href="https://www.linkedin.com/in/tankita236/" target="_blank" class="linkedin"><i class="fa fa-linkedin"
-                    aria-hidden="true"></i></a>
-            <a href="https://github.com/tankita236" target="_blank" class="git"><i class="fa fa-github "
-                    aria-hidden="true"></i></a>
+          <a
+            href="https://www.linkedin.com/in/tankita236/"
+            target="_blank"
+            class="linkedin"
+            ><i class="fa fa-linkedin" aria-hidden="true"></i
+          ></a>
+          <a href="https://github.com/tankita236" target="_blank" class="git"
+            ><i class="fa fa-github" aria-hidden="true"></i
+          ></a>
         </div>
-
-    </footer>
+      </footer>
 
     <!--Font awesosme-->
     <script src="https://kit.fontawesome.com/7bc2a2c594.js" crossorigin="anonymous"></script>
