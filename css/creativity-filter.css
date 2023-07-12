@@ -1,0 +1,31 @@
+/* Category Filter of Work */
+.creativity--filter {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.creativity--filter h2 {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 42px;
+  color: var(--secondary);
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+.creativity--filter-container {
+  display: flex;
+}
+.creativity--filter-item {
+  margin-right: 30px;
+  width: 25%;
+  text-align: center;
+  padding: 30px 16px;
+  border-radius: 8px;
+  background-color: rgba(6, 224, 248, 0.6);
+  color: #313131;
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+.creativity--filter-item:last-child {
+  margin-right: 0;
+}

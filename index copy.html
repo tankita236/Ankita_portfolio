@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankita Portfolio</title>
+    <!--CSS stylesheet-->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav id="main-nav" class="container">
+            <a href="./index.html" class="logo">
+                <picture>
+                    <source srcset="./images/logo/logo.webp" />
+                    <source srcset="./images/logo/logo.jpg" />
+                    <img src="./images/logo/logo.png" alt="AT Creations" />
+                </picture>
+            </a>
+
+            <div class="options">
+                <a href="./index.html"><button class="btn dark-highlight">Home</button></a>
+                <a href="./work.html"><button class="btn">Work</button></a>
+                <a href="./about.html#passion"><button class="btn">Hobby</button></a>
+                <a href="./about.html"><button class="btn">About me</button></a>
+            </div>
+            <div class="dropdown">
+                <button onclick="myFunction(event)" class="dropdown-btn
+                        toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="./index.html"><button class="btn
+                                dark-highlight">Home</button></a>
+                    <a href="./work.html"><button class="btn">Work</button></a>
+                    <a href="#"><button class="btn">Hobby</button></a>
+                    <a href="./about.html"><button class="btn">About me</button></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- heroSection -->
+        <div class="heroSection">
+            <div class="container">
+                <div class="left">
+                    <div class="name">👋 I’m Ankita Tiwari</div>
+                    <h1 class="profession">UX/UI Designer</h1>
+                    <div class="content">
+                        <p>I believe,</p>
+                        <p class="highlight">In Transforming Ideas into
+                            Engaging
+                            Experiences</p>
+                        <div>
+                            <p>
+                                The world is constantly evolving thanks to the power of user-centred design. Crafting a
+                                impressive experience that prioritises, the user needs through a series of touch-points
+                                which enables meaningful interactions.
+                            </p>
+                            <p>
+                                It starts with understanding what the user needs, and ideating an innovative solution to
+                                fulfilit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <picture>
+                        <source srcset="./images/self_home/self.webp" />
+                        <source srcset="./images/self_home/self.jpg" />
+                        <img src="./images/self_home/self.png" alt="Ankita Tiwari" />
+                    </picture>
+                </div>
+            </div>
+            <img src="../images/designImages/dotPattern.png" alt="" class="leftTop">
+            <img src="../images/designImages/dotPattern.png" alt="" class="rightBottom">
+
+        </div>
+        
+        <article>
+            <!-- Recent Work Gallery -->
+            <div class="container">
+                <div class="creations" id="recentWork">
+                    <div class="creations--wrapper">
+                        <h2> My Recent Work</h2>
+                        <div class="creations--list">
+                            <!-- Design/Work 1 : ODD : Money Tracker -->
+                            <div class="creations--list-item">
+                                <div class="left">
+                                    <picture>
+                                        <img src=""
+                                            alt="" />
+                                    </picture>
+                                </div>
+                                <div class="right">
+                                    <div class="tag">#Mobile App Screens</div>
+                                    <h3>MoneyTracker Mobile App</h3>
+                                    <p><span> Problem Solved:</span></p>
+                                    <p>
+                                        An app to help track expenses and remind upcoming bills/EMIs along with tracking
+                                        your Future Savings
+                                    </p>
+                                    <div class="links">
+                                        <a href="#">CaseStudy</a>
+                                        <a href="#">Prototype( Mobile Only)</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Design/Work 2 : EVEN : Atomic System -->
+                            <div class="creations--list-item even">
+                                <div class="right">
+                                    <!-- <div class="tag">#Website Screens</div> -->
+                                    <h3>Atomic System</h3>
+                                    <p><span> Learning</span></p>
+                                    <p>
+                                        Atomic System importance and process
+                                    </p>
+                                    <div class="links">
+                                        <!-- <a href="#">CaseStudy</a> -->
+                                        <a href="https://www.figma.com/proto/ra8O30EOO2lwuGIU9DGhWw/AppplyingAtomicDesgin?page-id=105%3A2218&type=design&node-id=105-2380&viewport=554%2C489%2C0.08&t=hfoRYuNGFQk0uBGl-1&scaling=scale-down&mode=design">Prototype</a>
+                                    </div>
+                                </div>
+                                <div class="left">
+                                    <picture>
+                                        <img src="./images/uxDesigns/atomicSystem.png"
+                                            alt="AtomicSystem" />
+                                    </picture>
+                                </div>
+                            </div>
+                            <!-- Design/Work 3 : ODD : Ankita Portfolio -->
+                            <div class="creations--list-item">
+                                <div class="left">
+                                    <picture>
+                                        <img src=""
+                                            alt="" />
+                                    </picture>
+                                </div>
+                                <div class="right">
+                                    <div class="tag">#Website Screens</div>
+                                    <h3>Self Portfolio</h3>
+                                    <p><span> Problem Solved:</span></p>
+                                    <p>
+                                        A platform which represents the designer work and tells about their creativity.
+                                    </p>
+                                    <div class="links">
+                                        <a href="#">CaseStudy</a>
+                                        <a href="#">Prototype</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Design/Work 2 : EVEN : Martial Arts Sports Club -->
+                            <div class="creations--list-item even">
+                                <div class="right">
+                                    <div class="tag">#Website Screens</div>
+                                    <h3>Martial Arts Sport Club</h3>
+                                    <p><span> Problem Solved:</span></p>
+                                    <p>
+                                        Making a platform which helps in knowing all about Martial Arts Sport.
+                                    </p>
+                                    <div class="links">
+                                        <a href="#">CaseStudy</a>
+                                        <a href="#">Prototype</a>
+                                    </div>
+                                </div>
+                                <div class="left">
+                                    <picture>
+                                        <img src=""
+                                            alt="" />
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="container">
+            <picture>
+                <source srcset="./images/logo/logo.webp" />
+                <source srcset="./images/logo/logo.jpg" />
+
+                <img src="./images/logo/logo.png" alt="AT Creations" />
+            </picture>
+            <div class="options">
+                <a href="./index.html"><button class="btn dark-highlight">Home</button></a>
+                <a href="./work.html"><button class="btn">Work</button></a>
+                <a href="./about.html#passion"><button class="btn">Hobby</button></a>
+                <a href="./about.html"><button class="btn">About me</button></a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/tankita236/" target="_blank" class="linkedin"><i
+                        class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://github.com/tankita236" target="_blank" class="git"><i class="fa fa-github"
+                        aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!--Font awesosme-->
+    <script src="https://kit.fontawesome.com/7bc2a2c594.js" crossorigin="anonymous"></script>
+
+    <!--LInking my JS file-->
+    <script type="text/javascript" src="./js/app.js"></script>
+</body>
+
+</html>

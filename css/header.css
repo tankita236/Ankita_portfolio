@@ -1,0 +1,94 @@
+/* Header */
+header {
+  width: 100%;
+  background: var(--dimText);
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+header nav button i {
+  color: var(--darkText);
+  font-size: 25px;
+}
+header nav .logo img {
+  height: 50px;
+}
+header nav .options {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 576px) {
+  header nav .options {
+    display: none;
+  }
+}
+header nav .dropdown {
+  position: relative;
+  align-items: center;
+  display: none;
+}
+@media (max-width: 576px) {
+  header nav .dropdown {
+    display: flex;
+  }
+}
+header nav .dropdown-btn {
+  padding: 0 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  background: transparent;
+}
+header nav .dropdown-content {
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  background: var(--darkText);
+  border-radius: 5px;
+  width: 180px;
+  z-index: 1;
+  display: none;
+}
+header nav .dropdown-content a {
+  color: var(--pure);
+  padding: 10px 10px;
+  border: none;
+  border-bottom: 1px solid var(--midText);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 2px;
+}
+header nav .dropdown-content a:nth-last-child(1) {
+  border-bottom: none;
+}
+header nav .dropdown-content a:hover {
+  background: var(--pure);
+  color: var(--darkText);
+}
+header nav .open {
+  display: block;
+}/*# sourceMappingURL=header.css.map */
+
+@media (max-width: 768px) {
+ header nav.container{
+  margin-left: 0;
+  margin-right: 16px;
+ }
+ header nav .dropdown-btn{
+  padding: 0;
+ }
+ header nav .dropdown-content a .btn{
+  color: var(--pure);
+}
+header nav .dropdown-content a .btn.dark-highlight{
+  color: var(--secondaryBright);
+}
+}
