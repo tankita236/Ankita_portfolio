@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankita Portfolio : Design Gallery</title>
+    <!--CSS stylesheet-->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav id="main-nav" class="container">
+            <a href="./index.html" class="logo">
+                <picture>
+                    <source srcset="./images/logo/logo.webp" />
+                    <source srcset="./images/logo/logo.jpg" />
+                    <img src="./images/logo/logo.png" alt="AT Creations" />
+                </picture>
+            </a>
+
+            <div class="options">
+                <a href="./index.html"><button class="btn dark-highlight">Home</button></a>
+                <a href="./work.html"><button class="btn">Work</button></a>
+                <a href="#"><button class="btn">Hobby</button></a>
+                <a href="./about.html"><button class="btn">About me</button></a>
+            </div>
+            <div class="dropdown">
+                <button onclick="myFunction(event)" class="dropdown-btn
+                        toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="./index.html"><button class="btn
+                                dark-highlight">Home</button></a>
+                    <a href="./work.html"><button class="btn">Work</button></a>
+                    <a href="#"><button class="btn">Hobby</button></a>
+                    <a href="./about.html"><button class="btn">About me</button></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="creativity">
+        <!-- Creativity Section -->
+        <!-- <div class="creativity--filter">
+            <div class="container">
+                <h2>My Work</h2>
+                <div class="creativity--filter-container">
+                    <a href="#recentWork" class="creativity--filter-item">
+                        New
+                    </a>
+                    <a href="#websites" class="creativity--filter-item">
+                        Reiterating
+                    </a>
+                    <a href="#reiterating" class="creativity--filter-item">
+                        Hackathon
+                    </a>
+                    <a href="#hackathon" class="creativity--filter-item">
+                        Website
+                    </a>
+                </div>
+            </div>
+        </div> -->
+
+        <article>
+            <!-- Recent Work Gallery -->
+
+            <!-- Website Gallery -->
+            <div class="designWork" id="websites" style="margin-top: 60px;">
+                <div class="container">
+                    <div class="creations--wrapper">
+                        <h2> My Work</h2>
+                        <div class="creations--list">
+                            <!-- Design/Work 1 : ODD : Artistic Gallery -->
+                            <div class="creations--list-item">
+                                <div class="left">
+                                    <picture>
+                                        <img src="../images/uxDesigns/ArtisticGalleryWebFlow.png"
+                                            alt="ArtisticGalleryWebFlow" />
+                                    </picture>
+                                </div>
+                                <div class="right">
+                                    <!-- <div class="tag">#Website</div> -->
+                                    <h3>Artistic Gallery</h3>
+                                    <p><span> Problem Solved:</span></p>
+                                    <p>
+                                        Create an online art marketplace for buying and selling unique artworks. </p>
+                                    <div class="links">
+                                        <a href="#">CaseStudy</a>
+                                        <a href="#">Prototype</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Design/Work 2 : EVEN : Empoppa -->
+                            <div class="creations--list-item even">
+                                <div class="right">
+                                    <!-- <div class="tag">#Website</div> -->
+                                    <h3>Empoppa</h3>
+                                    <p><span> Problem Solved:</span></p>
+                                    <p>
+                                        Create an online platform for parents and child psychologists to teach children
+                                        empathy. </p>
+                                    <div class="links">
+                                        <a href="#">CaseStudy</a>
+                                        <a href="#">Prototype</a>
+                                    </div>
+                                </div>
+                                <div class="left">
+                                    <picture>
+                                        <img src="../images/uxDesigns/ArtisticGalleryWebFlow.png"
+                                            alt="ArtisticGalleryWebFlow" />
+                                    </picture>
+                                </div>
+                            </div>
+                        <!-- </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- Reiterating Screens Gallery -->
+            <!-- <div class="designWork" id="reiterating">
+                <div class="container">
+                    <div class="creations--wrapper">
+                        <h2> Reiterating Screens </h2>
+                        <div class="creations--list"> -->
+                            <!-- Design/Work 1 : ODD : OneRecord Hero Section Reiterating -->
+                            <div class="creations--list-item">
+                                <div class="left">
+                                    <picture>
+                                        <img src="../images/uxDesigns/ArtisticGalleryWebFlow.png"
+                                            alt="ArtisticGalleryWebFlow" />
+                                    </picture>
+                                </div>
+                                <div class="right">
+                                    <div class="tag">#Reiterating Screen</div>
+                                    <h3>OneRecord Hero Section</h3>
+                                    <p><span> Problem Solved:</span></p>
+                                    <p>
+                                        Making User action clear and focused +
+                                        Letting
+                                        user have a peak of system they are
+                                        going to use
+                                    </p>
+                                    <div class="links">
+                                        <a href="#">CaseStudy</a>
+                                        <a href="#">Prototype</a>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- Hackathon Work Gallery -->
+            <!-- <div class="designWork" id="hackathon">
+                <div class="container">
+                    <div class="creations--wrapper">
+                        <h2> Hackathon </h2>
+                        <div class="creations--list"> -->
+                            <!-- Design/Work 1 : ODD : FabHotel Adding Feature -->
+                            <div class="creations--list-item">
+                                <div class="left">
+                                    <picture>
+                                        <img src="../images/uxDesigns/ArtisticGalleryWebFlow.png"
+                                            alt="ArtisticGalleryWebFlow" />
+                                    </picture>
+                                </div>
+                                <div class="right">
+                                    <div class="tag">#Hackathon 1</div>
+                                    <h3>FabHotel App (48hrs)</h3>
+                                    <p><span> Problem Solved:</span></p>
+                                    <p>
+                                        Aim to Maximize Revenue by Unlocking the Potential of Upselling Services
+                                    </p>
+                                    <div class="links">
+                                        <a href="#">CaseStudy</a>
+                                        <a href="#">Prototype</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Design/Work 2: EVEN : Suagr App Adding Feature-->
+                            <!-- <div class="creations--list-item even">
+                                <div class="right">
+                                    <div class="tag">#Hackathon 2</div>
+                                    <h3>Sugar App (48hrs)</h3>
+                                    <p><span> Problem Solved:</span></p>
+                                    <p>
+                                        To add a Voice/Image search option in the search field
+                                    </p>
+                                    <div class="links">
+                                        <a href="#">CaseStudy</a>
+                                        <a href="#">Prototype</a>
+                                    </div>
+                                </div>
+                                <div class="left">
+                                    <picture>
+                                        <img src="../images/uxDesigns/ArtisticGalleryWebFlow.png"
+                                            alt="ArtisticGalleryWebFlow" />
+                                    </picture>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="container">
+            <picture>
+                <source srcset="../images/logo.webp" />
+                <source srcset="../images/logo.jpg" />
+
+                <img src="../images/logo.png" alt="AT Creations" />
+            </picture>
+            <div class="options">
+                <a href="./index.html"><button class="btn dark-highlight">Home</button></a>
+                <a href="./work.html"><button class="btn">Work</button></a>
+                <a href="#"><button class="btn">Hobby</button></a>
+                <a href="./about.html"><button class="btn">About me</button></a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/tankita236/" target="_blank" class="linkedin"><i
+                        class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://github.com/tankita236" target="_blank" class="git"><i class="fa fa-github"
+                        aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!--Font awesosme-->
+    <script src="https://kit.fontawesome.com/7bc2a2c594.js" crossorigin="anonymous"></script>
+
+    <!--LInking my JS file-->
+    <script type="text/javascript" src="./js/app.js"></script>
+</body>
+
+</html>

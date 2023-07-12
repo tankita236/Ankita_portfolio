@@ -2,181 +2,181 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> My Photography</title>
-    <!-- google fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap" rel="stylesheet">
-
-    <!--CSS stylesheet-->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/gallery.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Ankita : My Photography</title>
+  <!--CSS stylesheet-->
+  <link rel="stylesheet" href="./style.css" />
+  <!-- google fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-   
-       <!-- Header -->
-       <header>
-        <nav id="main-nav">
-          <a href="./index.html" class="brand">
-            <picture>
-              <source srcset="./images/logo.webp" />
-              <source srcset="./images/logo.jpg" />
-              <img src="./images/logo.png" alt="AT Creations" />
-            </picture>
-          </a>
-  
-          <div class="options">
-            <a href="./index.html"
-              ><button class="btn ">About</button></a
-            >
-            <a href="./uxDesigns.html"
-              ><button class="btn">UX/UI Designs</button></a
-            >
-            <a href="./webCreation.html"
-              ><button class="btn">Developments</button></a
-            >
-            <a href="./paintings.html"><button class="btn">Paintings</button></a>
-            <a href="./sketches.html"><button class="btn">Sketches</button></a>
-            <a href="./photographs.html"
-              ><button class="btn dark-highlight">Photographs</button></a
-            >
-          </div>
-          <div class="dropdown">
-            <button onclick="myFunction(event)" class="dropdown-btn toggle">
-              <i class="fas fa-bars"></i>
-            </button>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="./index.html">About</a>
-              <a href="./uxDesigns.html"
-                ><button class="btn">UX/UI Designs</button></a
-              >
-              <a href="./webCreation.html">Developments</a>
-              <a href="./paintings.html">Paintings</a>
-              <a href="./sketches.html">Sketches</a>
-              <a href="./photographs.html">Photographs</a>
-            </div>
-          </div>
-        </nav>
-      </header>
+  <!-- Header -->
+  <header>
+    <nav id="main-nav" class="container">
+      <a href="./index.html" class="logo">
+        <picture>
+          <source srcset="./images/logo/logo.webp" />
+          <source srcset="./images/logo/logo.jpg" />
+          <img src="./images/logo/logo.png" alt="AT Creations" />
+        </picture>
+      </a>
 
-    <section class="gallery">
-        <h1>My Photography</h1>
+      <div class="options">
+        <a href="./index.html"><button class="btn">Home</button></a>
+        <a href="./work.html"><button class="btn">Work</button></a>
+        <a href="/about.html#passion"><button class="btn dark-highlight">Hobby</button></a>
+        <a href="./about.html"><button class="btn">About me</button></a>
+      </div>
+      <div class="dropdown">
+        <button onclick="myFunction(event)" class="dropdown-btn
+                        toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="./index.html"><button class="btn">Home</button></a>
+          <a href="./work.html"><button class="btn">Work</button></a>
+          <a href="/about.html#passion"><button class="btn dark-highlight">Hobby</button></a>
+          <a href="./about.html"><button class="btn">About me</button></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Photography Gallery -->
+  <main>
+    <div class="container">
+      <article class="gallery">
+        <h2>My Photography</h2>
 
         <div class="row">
-            <!--Col 1-->
-            <div class="column">
-                <picture>
-                    <source srcset="./images/hobby_images/photography/clear_cloud_1.webp">
-                    <source srcset="./images/hobby_images/photography/clear_cloud_1.jpg">
-                    <img src="./images/hobby_images/photography/clear_cloud_1.png" alt="clear_cloud_1">
-                </picture>
-                <picture>
-                    <source srcset="./images/hobby_images/photography/pink_rose_1.webp">
-                    <source srcset="./images/hobby_images/photography/pink_rose_1.jpg">
-                    <img src="./images/hobby_images/photography/pink_rose_1.png" alt="pink_rose_1">
-                </picture>
-                <picture>
-                    <source srcset="./images/hobby_images/photography/flower_2.webp">
-                    <source srcset="./images/hobby_images/photography/flower_2.jpg">
-                    <img src="./images/hobby_images/photography/flower_2.png" alt="flower_2">
-                </picture>
-            </div>
-            <!--Col 2-->
-            <div class="column">
-                <picture>
-                    <source srcset="./images/hobby_images/photography/clear_cloud_3.webp">
-                    <source srcset="./images/hobby_images/photography/clear_cloud_3.jpg">
-                    <img src="./images/hobby_images/photography/clear_cloud_3.png" alt="clear_cloud_3">
-                </picture>
-                
-                <picture>
-                    <source srcset="./images/hobby_images/photography/plant_5.webp">
-                    <source srcset="./images/hobby_images/photography/plant_5.jpg">
-                    <img src="./images/hobby_images/photography/plant_5.png" alt="plant_5">
-                </picture>
-            </div>
-            <!-- Col 3 -->
-            <div class="column">
-                <picture>
-                    <source srcset="./images/hobby_images/photography/starry_cloud_1.webp">
-                    <source srcset="./images/hobby_images/photography/starry_cloud_1.jpg">
-                    <img src="./images/hobby_images/photography/starry_cloud_1.png" alt="starry_cloud_1">
-                </picture>
-                <picture>
-                    <source srcset="./images/hobby_images/photography/windy_monsoon_clouds_1.webp">
-                    <source srcset="./images/hobby_images/photography/windy_monsoon_clouds_1.jpg">
-                    <img src="./images/hobby_images/photography/windy_monsoon_clouds_1.png"
-                        alt="windy_monsoon_clouds_1">
-                </picture>
-                <picture>
-                    <source srcset="./images/hobby_images/photography/periwinkle_1.webp">
-                    <source srcset="./images/hobby_images/photography/periwinkle_1.jpg">
-                    <img src="./images/hobby_images/photography/periwinkle_1.png" alt="periwinkle_1">
-                </picture>
-            </div>
-            <!-- Column 4 -->
-            <div class="column">
-                <picture>
-                    <source srcset="./images/hobby_images/photography/sunset_cloud_1.webp">
-                    <source srcset="./images/hobby_images/photography/sunset_cloud_1.jpg">
-                    <img src="./images/hobby_images/photography/sunset_cloud_1.png" alt="sunset_cloud_1">
-                </picture>
-                <picture>
-                    <source srcset="./images/hobby_images/photography/clear_cloud_4.webp">
-                    <source srcset="./images/hobby_images/photography/clear_cloud_4.jpg">
-                    <img src="./images/hobby_images/photography/clear_cloud_4.png" alt="clear_cloud_4">
-                </picture>
-                <picture>
-                    <source srcset="./images/hobby_images/photography/plant_1.webp">
-                    <source srcset="./images/hobby_images/photography/plant_1.jpg">
-                    <img src="./images/hobby_images/photography/plant_1.png" alt="plant_1">
-                </picture>
-            </div>
+          <!--Col 1-->
+          <div class="column">
+            <picture>
+              <source srcset="./images/hobby_images/photography/clear_cloud_1.webp">
+              <source srcset="./images/hobby_images/photography/clear_cloud_1.jpg">
+              <img src="./images/hobby_images/photography/clear_cloud_1.png" alt="clear_cloud_1">
+            </picture>
+            <picture>
+              <source srcset="./images/hobby_images/photography/pink_rose_1.webp">
+              <source srcset="./images/hobby_images/photography/pink_rose_1.jpg">
+              <img src="./images/hobby_images/photography/pink_rose_1.png" alt="pink_rose_1">
+            </picture>
+            <picture>
+              <source srcset="./images/hobby_images/photography/flower_2.webp">
+              <source srcset="./images/hobby_images/photography/flower_2.jpg">
+              <img src="./images/hobby_images/photography/flower_2.png" alt="flower_2">
+            </picture>
+          </div>
+          <!--Col 2-->
+          <div class="column">
+            <picture>
+              <source srcset="./images/hobby_images/photography/clear_cloud_3.webp">
+              <source srcset="./images/hobby_images/photography/clear_cloud_3.jpg">
+              <img src="./images/hobby_images/photography/clear_cloud_3.png" alt="clear_cloud_3">
+            </picture>
+
+            <picture>
+              <source srcset="./images/hobby_images/photography/plant_5.webp">
+              <source srcset="./images/hobby_images/photography/plant_5.jpg">
+              <img src="./images/hobby_images/photography/plant_5.png" alt="plant_5">
+            </picture>
+          </div>
+          <!-- Col 3 -->
+          <div class="column">
+            <picture>
+              <source srcset="./images/hobby_images/photography/starry_cloud_1.webp">
+              <source srcset="./images/hobby_images/photography/starry_cloud_1.jpg">
+              <img src="./images/hobby_images/photography/starry_cloud_1.png" alt="starry_cloud_1">
+            </picture>
+            <picture>
+              <source srcset="./images/hobby_images/photography/windy_monsoon_clouds_1.webp">
+              <source srcset="./images/hobby_images/photography/windy_monsoon_clouds_1.jpg">
+              <img src="./images/hobby_images/photography/windy_monsoon_clouds_1.png" alt="windy_monsoon_clouds_1">
+            </picture>
+            <picture>
+              <source srcset="./images/hobby_images/photography/periwinkle_1.webp">
+              <source srcset="./images/hobby_images/photography/periwinkle_1.jpg">
+              <img src="./images/hobby_images/photography/periwinkle_1.png" alt="periwinkle_1">
+            </picture>
+          </div>
+          <!-- Column 4 -->
+          <div class="column">
+            <picture>
+              <source srcset="./images/hobby_images/photography/sunset_cloud_1.webp">
+              <source srcset="./images/hobby_images/photography/sunset_cloud_1.jpg">
+              <img src="./images/hobby_images/photography/sunset_cloud_1.png" alt="sunset_cloud_1">
+            </picture>
+            <picture>
+              <source srcset="./images/hobby_images/photography/clear_cloud_4.webp">
+              <source srcset="./images/hobby_images/photography/clear_cloud_4.jpg">
+              <img src="./images/hobby_images/photography/clear_cloud_4.png" alt="clear_cloud_4">
+            </picture>
+            <picture>
+              <source srcset="./images/hobby_images/photography/plant_1.webp">
+              <source srcset="./images/hobby_images/photography/plant_1.jpg">
+              <img src="./images/hobby_images/photography/plant_1.png" alt="plant_1">
+            </picture>
+          </div>
         </div>
 
-    </section>
-    
-        <!--Footer-->
-        <footer>
+      </article>
+      <!-- Passion -->
+      <article class="passion" id="passion">
+        <h2>My Hobby</h2>
+        <div class="passion--container">
+          <!-- Painting -->
+          <a href="./paintings.html" class="passion--item">
             <picture>
-              <source srcset="./images/logo.webp" />
-              <source srcset="./images/logo.jpg" />
-      
-              <img src="./images/logo.png" alt="AT Creations" />
+              <source srcset="./images/about_page/painting/blue_flower.webp" />
+              <source srcset="./images/about_page/painting/blue_flower.jpg" />
+              <img src="./images/about_page/painting/blue_flower.png" alt="painting" />
             </picture>
-            <div class="options">
-              <a href="./index.html"
-                ><button class="btn">About</button></a
-              >
-              <a href="./uxDesigns.html"
-                ><button class="btn">UX/UI Designs</button></a
-              >
-              <a href="./webCreation.html"
-                ><button class="btn">Developments</button></a
-              >
-              <a href="./paintings.html"><button class="btn">Paintings</button></a>
-              <a href="./sketches.html"><button class="btn">Sketches</button></a>
-              <!-- <a href="./photographs.html"><button class="btn ">Photographs</button></a> -->
+            <div class="passion--item-info">
+              <h3>Painting</h3>
             </div>
-            <div class="social-links">
-              <a
-                href="https://www.linkedin.com/in/tankita236/"
-                target="_blank"
-                class="linkedin"
-                ><i class="fa fa-linkedin" aria-hidden="true"></i
-              ></a>
-              <a href="https://github.com/tankita236" target="_blank" class="git"
-                ><i class="fa fa-github" aria-hidden="true"></i
-              ></a>
+          </a>
+          <!-- Sketching -->
+          <a href="./sketches.html" class="passion--item">
+            <picture>
+              <source srcset="./images/about_page/sketching/fairy.webp" />
+              <source srcset="./images/about_page/sketching/fairy.jpg" />
+              <img src="./images/about_page/sketching/fairy.png" alt="sketching" />
+            </picture>
+            <div class="passion--item-info">
+              <h3>Sketching</h3>
             </div>
-          </footer>
+          </a>
+        </div>
+      </article>
+    </div>
+  </main>
+  <!--Footer-->
+  <footer>
+    <div class="container">
+      <picture>
+        <source srcset="./images/logo/logo.webp" />
+        <source srcset="./images/logo/logo.jpg" />
 
+        <img src="./images/logo/logo.png" alt="AT Creations" />
+      </picture>
+      <div class="options">
+        <a href="./index.html"><button class="btn">Home</button></a>
+        <a href="./work.html"><button class="btn">Work</button></a>
+        <a href="./about.html#passion"><button class="btn dark-highlight">Hobby</button></a>
+        <a href="./about.html"><button class="btn">About me</button></a>
+      </div>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/tankita236/" target="_blank" class="icon"><img src="./images/LinkedIN_black.png"></a>
+        <a href="https://www.behance.net/tankita236" target="_blank" class="icon"><img src="./images/iconmonstr-behance-1.png"></a>
+    </div>
+    </div>
+  </footer>
 
-    <!--Font awesosme-->
-    <script src="https://kit.fontawesome.com/7bc2a2c594.js" crossorigin="anonymous"></script>
-    <!--LInking my JS file-->
-    <script type="text/javascript" src="./js/app.js"></script>
+  <!--Font awesosme-->
+  <script src="https://kit.fontawesome.com/7bc2a2c594.js" crossorigin="anonymous"></script>
 
+  <!--LInking my JS file-->
+  <script type="text/javascript" src="./js/app.js"></script>
 </body>
 
 </html>

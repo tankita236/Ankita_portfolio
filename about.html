@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankita : About Me</title>
+    <!--CSS stylesheet-->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav id="main-nav" class="container">
+            <a href="./index.html" class="logo">
+                <picture>
+                    <source srcset="./images/logo/logo.webp" />
+                    <source srcset="./images/logo/logo.jpg" />
+                    <img src="./images/logo/logo.png" alt="AT Creations" />
+                </picture>
+            </a>
+
+            <div class="options">
+                <a href="./index.html"><button class="btn">Home</button></a>
+                <a href="./work.html"><button class="btn">Work</button></a>
+                <a href="./about.html#passion"><button class="btn">Hobby</button></a>
+                <a href="./about.html"><button class="btn dark-highlight">About me</button></a>
+            </div>
+            <div class="dropdown">
+                <button onclick="myFunction(event)" class="dropdown-btn
+                        toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="./index.html"><button class="btn">Home</button></a>
+                    <a href="./work.html"><button class="btn">Work</button></a>
+                    <a href="./about.html#passion"><button class="btn">Hobby</button></a>
+                    <a href="./about.html"><button class="btn dark-highlight">About me</button></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main : About Me -->
+    <main>
+        <div class="container">
+            <!-- Intro -->
+            <section>
+                <article class="intro">
+                    <div class="intro--content">
+                        <div class="intro--content-name">👋 I’m Ankita Tiwari</div>
+                        <h1 class="intro--content-profession">UX/UI Designer</h1>
+                        <div class="intro--content-info">
+                            <p>
+                                I'm passionate about improving the lives of others through my creative desgins.
+                                The world is constantly evolving thanks to the power of user-centred design. Crafting a
+                                impressive experience that prioritises, the user needs through a series of touch-points
+                                which enables meaningful interactions.
+                            </p>
+                            <p>
+                                I'm constantly evolving by learning new things everyday.
+                                I have a fondness for connecting with individuals who possess a drive and fearlessness
+                                in
+                                expressing their ideas to the world
+                            </p>
+                            <div class="mobile--hidden">
+                                <p>
+                                    As a self-taught designer, I have acquired extensive knowledge of UX/UI and product
+                                    design
+                                    methodologies, concepts, and theories by actively participating in workshops,
+                                    immersing
+                                    myself in informative blogs, and diligently applying these principles to personal
+                                    projects
+                                    during my free time as well as in my professional endeavors.
+                                </p>
+                                <p>
+                                    I am a big-picture thinker, I take great pleasure to contribute in every aspect of a
+                                    product's journey. From brainstorming and conceptualizing ideas, to meticulously
+                                    planning
+                                    and executing the development process.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro--image">
+                        <picture>
+                            <!-- <source srcset="./images/about_page/self/self.webp" /> -->
+                            <source srcset="./images/about_page/self/self.jpg" />
+                            <img src="./images/about_page/self/self.png" alt="Ankita Tiwari" />
+                        </picture>
+                    </div>
+                </article>
+                <div class="intro--content-info desktop--hidden">
+                    <p>
+                        As a self-taught designer, I have acquired extensive knowledge of UX/UI and product design
+                        methodologies, concepts, and theories by actively participating in workshops, immersing
+                        myself in informative blogs, and diligently applying these principles to personal projects
+                        during my free time as well as in my professional endeavors.
+                    </p>
+                    <p>
+                        I am a big-picture thinker, I take great pleasure to contribute in every aspect of a
+                        product's journey. From brainstorming and conceptualizing ideas, to meticulously planning
+                        and executing the development process.
+                    </p>
+                </div>
+            </section>
+            <!-- Motto -->
+            <article class="motto">
+                <h2>My Motto / Values</h2>
+                <div class="motto--content">
+                    <div class="motto--content-list">
+                        <h4>😍 Passion is Everything.</h4>
+                        <div>
+                            <p>
+                                If you don't enjoy what you're doing - move on.
+                            </p>
+                            <p>
+                                Putting your energy into something you believe in is what you must do. I'm fortunate to
+                                be
+                                inspired and surrounded by motivated people who enjoy what they do.
+                            </p>
+                            <p>
+                                We only have so much time on this earth to live - so why waste it?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="motto--content-list">
+                        <h4>🤓 Always be Learning.</h4>
+                        <div>
+                            <p>
+                                We humans are constantly progressing in this fast pace world that need to receive
+                                feedback in order to grow.
+                            </p>
+                            <p>
+                                So, I am always looking at ways to challenge and improve myself, which is why in my
+                                spare time I like to participate in hackathons, read blogs, dabble in new projects and
+                                most importantly give time to my hobby of painting which is the key to my creativity.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="motto--content-list">
+                        <h4>🎨 Embrace your Creativity.</h4>
+                        <div>
+                            <p>
+                                Everyone needs a creative outlet of some sort - else, we'd go insane!
+                            </p>
+                            <p>
+                                When I'm not
+                                designing, I'm roaming out into mountains and forest with myself or with my friends or
+                                painting artworks.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- Passion -->
+            <section>
+                <article class="passion" id="passion">
+                    <h2>My Hobby</h2>
+                    <div class="passion--container">
+                        <!-- Painting -->
+                        <a href="./paintings.html" class="passion--item">
+                            <picture>
+                                <source srcset="./images/about_page/painting/blue_flower.webp" />
+                                <source srcset="./images/about_page/painting/blue_flower.jpg" />
+                                <img src="./images/about_page/painting/blue_flower.png" alt="painting" />
+                            </picture>
+                            <div class="passion--item-info">
+                                <h3>Painting</h3>
+                            </div>
+                        </a>
+                        <!-- Sketching -->
+                        <a href="./sketches.html" class="passion--item">
+                            <picture>
+                                <source srcset="./images/about_page/sketching/fairy.webp" />
+                                <source srcset="./images/about_page/sketching/fairy.jpg" />
+                                <img src="./images/about_page/sketching/fairy.png" alt="sketching" />
+                            </picture>
+                            <div class="passion--item-info">
+                                <h3>Sketching</h3>
+                            </div>
+                        </a>
+                        <!-- Photography -->
+                        <a href="./photographs.html" class="passion--item mobile--hidden">
+                            <picture>
+                                <source srcset="./images/about_page/photography/windy_monsoon_clouds_1.webp" />
+                                <source srcset="./images/about_page/photography/windy_monsoon_clouds_1.jpg" />
+                                <img src="./images/about_page/photography/windy_monsoon_clouds_1.png"
+                                    alt="photography" />
+                            </picture>
+                            <div class="passion--item-info">
+                                <h3>Photography</h3>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+                <div class="passion--container desktop--hidden">
+                    <!-- Photography -->
+                    <a href="./photographs.html" class="passion--item">
+                        <picture>
+                            <source srcset="./images/about_page/photography/windy_monsoon_clouds_1.webp" />
+                            <source srcset="./images/about_page/photography/windy_monsoon_clouds_1.jpg" />
+                            <img src="./images/about_page/photography/windy_monsoon_clouds_1.png" alt="photography" />
+                        </picture>
+                        <div class="passion--item-info">
+                            <h3>Photography</h3>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <!-- History / Past -->
+            <!-- <article class="past">
+                <h2>My Past</h2>
+                <div>
+                    <p>
+                        I started my career as a <b>UX/UI Desginer & Frontend Developer</b> at KruxProkon.
+                    </p>
+                    <p>
+                        My role was quiet curical as I had 2 major roles to be played single handed.
+                        I was new to desiging at that time, though I has basic idea but I never used any tool.
+                    </p>
+                    <p>
+                        I started with Figma, initally I was just like all beginners putting spacing and all carefully
+                        and
+                        then desgining screens, and if any desgin was referrenced then the screenshots where included in
+                        the
+                        design.
+                    </p>
+                    <p>
+                        After getting the figma ready, I used to communicate with the leads on pointers and then
+                        re-tweaking the desgin as and when needed. Once approved starting the Frontend Development.
+                    </p>
+                </div>
+            </article> -->
+        </div>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="container">
+            <picture>
+                <source srcset="../images/logo.webp" />
+                <source srcset="../images/logo.jpg" />
+
+                <img src="../images/logo.png" alt="AT Creations" />
+            </picture>
+            <div class="options">
+                <a href="./index.html"><button class="btn">Home</button></a>
+                <a href="./work.html"><button class="btn">Work</button></a>
+                <a href="./about.html#passion"><button class="btn">Hobby</button></a>
+                <a href="./about.html"><button class="btn dark-highlight">About me</button></a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/tankita236/" target="_blank" class="icon"><img src="./images/LinkedIN_black.png"></a>
+                <a href="https://www.behance.net/tankita236" target="_blank" class="icon"><img src="./images/iconmonstr-behance-1.png"></a>
+            </div>
+        </div>
+    </footer>
+
+    <!--Font awesosme-->
+    <script src="https://kit.fontawesome.com/7bc2a2c594.js" crossorigin="anonymous"></script>
+
+    <!--LInking my JS file-->
+    <script type="text/javascript" src="./js/app.js"></script>
+</body>
+</html>

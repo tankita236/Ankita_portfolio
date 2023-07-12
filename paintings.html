@@ -3,288 +3,299 @@
 
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title> My Art</title>
-	<!-- google fonts-->
-	<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap" rel="stylesheet">
-
+	<title> Ankita : My Paintings</title>
 	<!--CSS stylesheet-->
-	<link rel="stylesheet" href="./css/style.css">
-	<link rel="stylesheet" href="./css/gallery.css">
+	<link rel="stylesheet" href="./style.css" />
+	<!-- google fonts-->
+	<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;600;700;800&display=swap"
+		rel="stylesheet" />
 </head>
 
 <body>
-	   <!-- Header -->
-	   <header>
-		<nav id="main-nav">
-		  <a href="./index.html" class="brand">
-			<picture>
-			  <source srcset="./images/logo.webp" />
-			  <source srcset="./images/logo.jpg" />
-			  <img src="./images/logo.png" alt="AT Creations" />
-			</picture>
-		  </a>
-  
-		  <div class="options">
-			<a href="./index.html"
-			  ><button class="btn ">About</button></a
-			>
-			<a href="./uxDesigns.html"
-			  ><button class="btn">UX/UI Designs</button></a
-			>
-			<a href="./webCreation.html"
-			  ><button class="btn">Developments</button></a
-			>
-			<a href="./paintings.html"><button class="btn  dark-highlight">Paintings</button></a>
-			<a href="./sketches.html"><button class="btn">Sketches</button></a>
-			<a href="./photographs.html"
-			  ><button class="btn">Photographs</button></a
-			>
-		  </div>
-		  <div class="dropdown">
-			<button onclick="myFunction(event)" class="dropdown-btn toggle">
-			  <i class="fas fa-bars"></i>
-			</button>
-			<div id="myDropdown" class="dropdown-content">
-			  <a href="./index.html">About</a>
-			  <a href="./uxDesigns.html"
-				><button class="btn">UX/UI Designs</button></a
-			  >
-			  <a href="./webCreation.html">Developments</a>
-			  <a href="./paintings.html">Paintings</a>
-			  <a href="./sketches.html">Sketches</a>
-			  <a href="./photographs.html">Photographs</a>
+	<!-- Header -->
+	<header>
+		<nav id="main-nav" class="container">
+			<a href="./index.html" class="logo">
+				<picture>
+					<source srcset="./images/logo/logo.webp" />
+					<source srcset="./images/logo/logo.jpg" />
+					<img src="./images/logo/logo.png" alt="AT Creations" />
+				</picture>
+			</a>
+
+			<div class="options">
+				<a href="./index.html"><button class="btn">Home</button></a>
+				<a href="./work.html"><button class="btn">Work</button></a>
+				<a href="/about.html#passion"><button class="btn dark-highlight">Hobby</button></a>
+				<a href="./about.html"><button class="btn">About me</button></a>
 			</div>
-		  </div>
+			<div class="dropdown">
+				<button onclick="myFunction(event)" class="dropdown-btn
+                        toggle">
+					<i class="fas fa-bars"></i>
+				</button>
+				<div id="myDropdown" class="dropdown-content">
+					<a href="./index.html"><button class="btn">Home</button></a>
+					<a href="./work.html"><button class="btn">Work</button></a>
+					<a href="/about.html#passion"><button class="btn dark-highlight">Hobby</button></a>
+					<a href="./about.html"><button class="btn">About me</button></a>
+				</div>
+			</div>
 		</nav>
-	  </header>
+	</header>
+	<!-- Painting Gallery -->
+	<main>
+		<div class="container">
+			<article class="gallery">
+				<h2>Painting</h2>
 
-	<section class="gallery">
-		<h1>Painting</h1>
+				<div class="row">
+					<!--Col 1-->
+					<div class="column">
+						<picture>
+							<source srcset="./images/hobby_images/paintings/sunset_birds_flying.webp">
+							<source srcset="./images/hobby_images/paintings/sunset_birds_flying.jpg">
+							<img src="./images/hobby_images/paintings/sunset_birds_flying.png"
+								alt="sunset_birds_flying">
+						</picture>
+						<picture>
+							<source srcset="./images/hobby_images/paintings/sunset.webp">
+							<source srcset="./images/hobby_images/paintings/sunset.jpg">
+							<img src="./images/hobby_images/paintings/sunset.png" alt="sunset">
+						</picture>
+						<picture>
+							<source srcset="./images/hobby_images/paintings/rice_field.webp">
+							<source srcset="./images/hobby_images/paintings/rice_field.jpg">
+							<img src="./images/hobby_images/paintings/rice_field.png" alt="rice_field">
+						</picture>
+						<picture>
+							<source srcset="./images/hobby_images/paintings/heart.webp">
+							<source srcset="./images/hobby_images/paintings/heart.jpg">
+							<img src="./images/hobby_images/paintings/heart.png" alt="heart">
+						</picture>
+						<picture>
+							<source srcset="./images/hobby_images/paintings/blue_flower.webp">
+							<source srcset="./images/hobby_images/paintings/blue_flower.jpg">
+							<img src="./images/hobby_images/paintings/blue_flower.png" alt="Blue blue_flower">
+						</picture>
+						<picture>
+							<source srcset="./images/hobby_images/paintings/flower_plant.webp">
+							<source srcset="./images/hobby_images/paintings/flower_plant.jpg">
+							<img src="./images/hobby_images/paintings/flower_plant.png" alt="flower_plant">
+						</picture>
+						<picture>
+							<source srcset="./images/hobby_images/paintings/flower_decoation_wall.webp">
+							<source srcset="./images/hobby_images/paintings/flower_decoation_wall.jpg">
+							<img src="./images/hobby_images/paintings/flower_decoation_wall.png"
+								alt="flower_decoation_wall">
+						</picture>
+						<picture>
+							<source srcset="./images/hobby_images/paintings/purple_tree.webp">
+							<source srcset="./images/hobby_images/paintings/purple_tree.jpg">
+							<img src="./images/hobby_images/paintings/purple_tree.png" alt="purple_tree">
+						</picture>
+						<picture>
+							<source srcset="./images/hobby_images/paintings/colorful_leaf_bookmark.webp">
+							<source srcset="./images/hobby_images/paintings/colorful_leaf_bookmark.jpg">
+							<img src="./images/hobby_images/paintings/colorful_leaf_bookmark.png"
+								alt="colorful_leaf_bookmark">
+						</picture>
+					</div>
+					<!--Col 2-->
+					<div class="column">
+						<picture>
+							<source srcset="./images/hobby_images/paintings/spring_pink_tree.webp">
+							<source srcset="./images/hobby_images/paintings/spring_pink_tree.jpg">
+							<img src="./images/hobby_images/paintings/spring_pink_tree.png" alt="spring_pink_tree">
+						</picture>
+						<picture>
+							<source srcset="./images/hobby_images/paintings/focus.webp">
+							<source srcset="./images/hobby_images/paintings/focus.jpg">
+							<img src="./images/hobby_images/paintings/focus.png" alt="Focus">
+						</picture>
+						<picture>
+							<source srcset="./images/hobby_images/paintings/pooh_tweety.webp">
+							<source srcset="./images/hobby_images/paintings/pooh_tweety.jpg">
+							<img src="./images/hobby_images/paintings/pooh_tweety.png" alt="pooh_tweety">
+						</picture>
+						<picture>
+							<source srcset="./images/hobby_images/paintings/night_traveller.webp">
+							<source srcset="./images/hobby_images/paintings/night_traveller.jpg">
+							<img src="./images/hobby_images/paintings/night_traveller.png" alt="night_traveller">
+						</picture>
+						<picture>
+							<source srcset="./images/hobby_images/paintings/moonlight_atmosphere.webp">
+							<source srcset="./images/hobby_images/paintings/moonlight_atmosphere.jpg">
+							<img src="./images/hobby_images/paintings/moonlight_atmosphere.png"
+								alt="moonlight_atmosphere">
+						</picture>
+						<picture>
+							<source srcset="./images/hobby_images/paintings/pandas.webp">
+							<source srcset="./images/hobby_images/paintings/pandas.jpg">
+							<img src="./images/hobby_images/paintings/pandas.png" alt="pandas">
+						</picture>
+						<picture>
+							<source srcset="./images/hobby_images/paintings/merry_christmas.webp">
+							<source srcset="./images/hobby_images/paintings/merry_christmas.jpg">
+							<img src="./images/hobby_images/paintings/merry_christmas.png" alt="merry_christmas">
+						</picture>
 
-		<div class="row">
-			<!--Col 1-->
-			<div class="column">
-				<picture>
-					<source srcset="./images/hobby_images/paintings/sunset_birds_flying.webp">
-					<source srcset="./images/hobby_images/paintings/sunset_birds_flying.jpg">
-					<img src="./images/hobby_images/paintings/sunset_birds_flying.png" alt="sunset_birds_flying">
-				</picture>
-				<picture>
-					<source srcset="./images/hobby_images/paintings/sunset.webp">
-					<source srcset="./images/hobby_images/paintings/sunset.jpg">
-					<img src="./images/hobby_images/paintings/sunset.png" alt="sunset">
-				</picture>
-				<picture>
-					<source srcset="./images/hobby_images/paintings/rice_field.webp">
-					<source srcset="./images/hobby_images/paintings/rice_field.jpg">
-					<img src="./images/hobby_images/paintings/rice_field.png" alt="rice_field">
-				</picture>
-				<picture>
-					<source srcset="./images/hobby_images/paintings/heart.webp">
-					<source srcset="./images/hobby_images/paintings/heart.jpg">
-					<img src="./images/hobby_images/paintings/heart.png" alt="heart">
-				</picture>
-				<picture>
-					<source srcset="./images/hobby_images/paintings/blue_flower.webp">
-					<source srcset="./images/hobby_images/paintings/blue_flower.jpg">
-					<img src="./images/hobby_images/paintings/blue_flower.png" alt="Blue blue_flower">
-				</picture>
-				<picture>
-					<source srcset="./images/hobby_images/paintings/flower_plant.webp">
-					<source srcset="./images/hobby_images/paintings/flower_plant.jpg">
-					<img src="./images/hobby_images/paintings/flower_plant.png" alt="flower_plant">
-				</picture>
-				<picture>
-					<source srcset="./images/hobby_images/paintings/flower_decoation_wall.webp">
-					<source srcset="./images/hobby_images/paintings/flower_decoation_wall.jpg">
-					<img src="./images/hobby_images/paintings/flower_decoation_wall.png" alt="flower_decoation_wall">
-				</picture>
-				<picture>
-					<source srcset="./images/hobby_images/paintings/purple_tree.webp">
-					<source srcset="./images/hobby_images/paintings/purple_tree.jpg">
-					<img src="./images/hobby_images/paintings/purple_tree.png" alt="purple_tree">
-				</picture>
-				<picture>
-					<source srcset="./images/hobby_images/paintings/colorful_leaf_bookmark.webp">
-					<source srcset="./images/hobby_images/paintings/colorful_leaf_bookmark.jpg">
-					<img src="./images/hobby_images/paintings/colorful_leaf_bookmark.png" alt="colorful_leaf_bookmark">
-				</picture>
-			</div>
-			<!--Col 2-->
-			<div class="column">
-				<picture>
-					<source srcset="./images/hobby_images/paintings/spring_pink_tree.webp">
-					<source srcset="./images/hobby_images/paintings/spring_pink_tree.jpg">
-					<img src="./images/hobby_images/paintings/spring_pink_tree.png" alt="spring_pink_tree">
-				</picture>
-				<picture>
-					<source srcset="./images/hobby_images/paintings/focus.webp">
-					<source srcset="./images/hobby_images/paintings/focus.jpg">
-					<img src="./images/hobby_images/paintings/focus.png" alt="Focus">
-				</picture>
-				<picture>
-					<source srcset="./images/hobby_images/paintings/pooh_tweety.webp">
-					<source srcset="./images/hobby_images/paintings/pooh_tweety.jpg">
-					<img src="./images/hobby_images/paintings/pooh_tweety.png" alt="pooh_tweety">
-				</picture>
-				<picture>
-					<source srcset="./images/hobby_images/paintings/night_traveller.webp">
-					<source srcset="./images/hobby_images/paintings/night_traveller.jpg">
-					<img src="./images/hobby_images/paintings/night_traveller.png" alt="night_traveller">
-				</picture>
-				<picture>
-					<source srcset="./images/hobby_images/paintings/moonlight_atmosphere.webp">
-					<source srcset="./images/hobby_images/paintings/moonlight_atmosphere.jpg">
-					<img src="./images/hobby_images/paintings/moonlight_atmosphere.png" alt="moonlight_atmosphere">
-				</picture>
-				<picture>
-					<source srcset="./images/hobby_images/paintings/pandas.webp">
-					<source srcset="./images/hobby_images/paintings/pandas.jpg">
-					<img src="./images/hobby_images/paintings/pandas.png" alt="pandas">
-				</picture>
-				<picture>
-					<source srcset="./images/hobby_images/paintings/merry_christmas.webp">
-					<source srcset="./images/hobby_images/paintings/merry_christmas.jpg">
-					<img src="./images/hobby_images/paintings/merry_christmas.png" alt="merry_christmas">
-				</picture>
+						<picture>
+							<source srcset="./images/hobby_images/paintings/teddy_bookmark.webp">
+							<source srcset="./images/hobby_images/paintings/teddy_bookmark.jpg">
+							<img src="./images/hobby_images/paintings/teddy_bookmark.png" alt="teddy_bookmark">
+						</picture>
 
-				<picture>
-					<source srcset="./images/hobby_images/paintings/teddy_bookmark.webp">
-					<source srcset="./images/hobby_images/paintings/teddy_bookmark.jpg">
-					<img src="./images/hobby_images/paintings/teddy_bookmark.png" alt="teddy_bookmark">
-				</picture>
+					</div>
+					<!-- Col 3 -->
+					<div class="column">
+						<picture>
+							<source srcset="./images/hobby_images/paintings/enjoy_food.webp">
+							<source srcset="./images/hobby_images/paintings/enjoy_food.jpg">
+							<img src="./images/hobby_images/paintings/enjoy_food.png" alt="enjoy_food">
+						</picture>
+						<picture>
+							<source srcset="./images/hobby_images/paintings/passion_cardboard_painting.webp">
+							<source srcset="./images/hobby_images/paintings/passion_cardboard_painting.jpg">
+							<img src="./images/hobby_images/paintings/passion_cardboard_painting.png"
+								alt="passion_cardboard_painting">
+						</picture>
+						<picture>
+							<source srcset="./images/hobby_images/paintings/flower_stand_vase.webp">
+							<source srcset="./images/hobby_images/paintings/flower_stand_vase.jpg">
+							<img src="./images/hobby_images/paintings/flower_stand_vase.png" alt="flower_stand_vase">
+						</picture>
+						<picture>
+							<source srcset="./images/hobby_images/paintings/heart_beat_cardboard_painting.webp">
+							<source srcset="./images/hobby_images/paintings/heart_beat_cardboard_painting.jpg">
+							<img src="./images/hobby_images/paintings/heart_beat_cardboard_painting.png"
+								alt="heart_beat_cardboard_painting">
+						</picture>
+						<picture>
+							<source srcset="./images/hobby_images/paintings/barbie.webp">
+							<source srcset="./images/hobby_images/paintings/barbie.jpg">
+							<img src="./images/hobby_images/paintings/barbie.png" alt="barbie">
+						</picture>
+						<picture>
+							<source srcset="./images/hobby_images/paintings/walk_to_stars.webp">
+							<source srcset="./images/hobby_images/paintings/walk_to_stars.jpg">
+							<img src="./images/hobby_images/paintings/walk_to_stars.png" alt="walk_to_stars">
+						</picture>
+						<picture>
+							<source srcset="./images/hobby_images/paintings/forest.webp">
+							<source srcset="./images/hobby_images/paintings/forest.jpg">
+							<img src="./images/hobby_images/paintings/forest.png" alt="forest">
+						</picture>
+						<picture>
+							<source srcset="./images/hobby_images/paintings/spring_tree_bookmark.webp">
+							<source srcset="./images/hobby_images/paintings/spring_tree_bookmark.jpg">
+							<img src="./images/hobby_images/paintings/spring_tree_bookmark.png"
+								alt="spring_tree_bookmark">
+						</picture>
+					</div>
+					<!-- Column 4 -->
+					<div class="column">
+						<picture>
+							<source srcset="./images/hobby_images/paintings/white_flower_vase.webp">
+							<source srcset="./images/hobby_images/paintings/white_flower_vase.jpg">
+							<img src="./images/hobby_images/paintings/white_flower_vase.png" alt="white_flower_vase">
+						</picture>
+						<picture>
+							<source srcset="./images/hobby_images/paintings/wallpaper.webp">
+							<source srcset="./images/hobby_images/paintings/wallpaper.jpg">
+							<img src="./images/hobby_images/paintings/wallpaper.png" alt="wallpaper">
+						</picture>
+						<picture>
+							<source srcset="./images/hobby_images/paintings/winter_tree.webp">
+							<source srcset="./images/hobby_images/paintings/winter_tree.jpg">
+							<img src="./images/hobby_images/paintings/winter_tree.png" alt="winter_tree">
+						</picture>
+						<picture>
+							<source srcset="./images/hobby_images/paintings/window_outdoor_lamp.webp">
+							<source srcset="./images/hobby_images/paintings/window_outdoor_lamp.jpg">
+							<img src="./images/hobby_images/paintings/window_outdoor_lamp.png"
+								alt="window_outdoor_lamp">
+						</picture>
+						<picture>
+							<source srcset="./images/hobby_images/paintings/windy_sailing_boat.webp">
+							<source srcset="./images/hobby_images/paintings/windy_sailing_boat.jpg">
+							<img src="./images/hobby_images/paintings/windy_sailing_boat.png" alt="windy_sailing_boat">
+						</picture>
+						<picture>
+							<source srcset="./images/hobby_images/paintings/still_life_book.webp">
+							<source srcset="./images/hobby_images/paintings/still_life_book.jpg">
+							<img src="./images/hobby_images/paintings/still_life_book.png" alt="still_life_book">
+						</picture>
+						<picture>
+							<source srcset="./images/hobby_images/paintings/still_life_fruits.webp">
+							<source srcset="./images/hobby_images/paintings/still_life_fruits.jpg">
+							<img src="./images/hobby_images/paintings/still_life_fruits.png" alt="still_life_fruits">
+						</picture>
+						<picture>
+							<source srcset="./images/hobby_images/paintings/still_life_glass.webp">
+							<source srcset="./images/hobby_images/paintings/still_life_glass.jpg">
+							<img src="./images/hobby_images/paintings/still_life_glass.png" alt="still_life_glass">
+						</picture>
+					</div>
+				</div>
 
-			</div>
-			<!-- Col 3 -->
-			<div class="column">
-				<picture>
-					<source srcset="./images/hobby_images/paintings/enjoy_food.webp">
-					<source srcset="./images/hobby_images/paintings/enjoy_food.jpg">
-					<img src="./images/hobby_images/paintings/enjoy_food.png" alt="enjoy_food">
-				</picture>
-				<picture>
-					<source srcset="./images/hobby_images/paintings/passion_cardboard_painting.webp">
-					<source srcset="./images/hobby_images/paintings/passion_cardboard_painting.jpg">
-					<img src="./images/hobby_images/paintings/passion_cardboard_painting.png"
-						alt="passion_cardboard_painting">
-				</picture>
-				<picture>
-					<source srcset="./images/hobby_images/paintings/flower_stand_vase.webp">
-					<source srcset="./images/hobby_images/paintings/flower_stand_vase.jpg">
-					<img src="./images/hobby_images/paintings/flower_stand_vase.png" alt="flower_stand_vase">
-				</picture>
-				<picture>
-					<source srcset="./images/hobby_images/paintings/heart_beat_cardboard_painting.webp">
-					<source srcset="./images/hobby_images/paintings/heart_beat_cardboard_painting.jpg">
-					<img src="./images/hobby_images/paintings/heart_beat_cardboard_painting.png"
-						alt="heart_beat_cardboard_painting">
-				</picture>
-				<picture>
-					<source srcset="./images/hobby_images/paintings/barbie.webp">
-					<source srcset="./images/hobby_images/paintings/barbie.jpg">
-					<img src="./images/hobby_images/paintings/barbie.png" alt="barbie">
-				</picture>
-				<picture>
-					<source srcset="./images/hobby_images/paintings/walk_to_stars.webp">
-					<source srcset="./images/hobby_images/paintings/walk_to_stars.jpg">
-					<img src="./images/hobby_images/paintings/walk_to_stars.png" alt="walk_to_stars">
-				</picture>
-				<picture>
-					<source srcset="./images/hobby_images/paintings/forest.webp">
-					<source srcset="./images/hobby_images/paintings/forest.jpg">
-					<img src="./images/hobby_images/paintings/forest.png" alt="forest">
-				</picture>
-				<picture>
-					<source srcset="./images/hobby_images/paintings/spring_tree_bookmark.webp">
-					<source srcset="./images/hobby_images/paintings/spring_tree_bookmark.jpg">
-					<img src="./images/hobby_images/paintings/spring_tree_bookmark.png" alt="spring_tree_bookmark">
-				</picture>
-			</div>
-			<!-- Column 4 -->
-			<div class="column">
-				<picture>
-					<source srcset="./images/hobby_images/paintings/white_flower_vase.webp">
-					<source srcset="./images/hobby_images/paintings/white_flower_vase.jpg">
-					<img src="./images/hobby_images/paintings/white_flower_vase.png" alt="white_flower_vase">
-				</picture>
-				<picture>
-					<source srcset="./images/hobby_images/paintings/wallpaper.webp">
-					<source srcset="./images/hobby_images/paintings/wallpaper.jpg">
-					<img src="./images/hobby_images/paintings/wallpaper.png" alt="wallpaper">
-				</picture>
-				<picture>
-					<source srcset="./images/hobby_images/paintings/winter_tree.webp">
-					<source srcset="./images/hobby_images/paintings/winter_tree.jpg">
-					<img src="./images/hobby_images/paintings/winter_tree.png" alt="winter_tree">
-				</picture>
-				<picture>
-					<source srcset="./images/hobby_images/paintings/window_outdoor_lamp.webp">
-					<source srcset="./images/hobby_images/paintings/window_outdoor_lamp.jpg">
-					<img src="./images/hobby_images/paintings/window_outdoor_lamp.png" alt="window_outdoor_lamp">
-				</picture>
-				<picture>
-					<source srcset="./images/hobby_images/paintings/windy_sailing_boat.webp">
-					<source srcset="./images/hobby_images/paintings/windy_sailing_boat.jpg">
-					<img src="./images/hobby_images/paintings/windy_sailing_boat.png" alt="windy_sailing_boat">
-				</picture>
-				<picture>
-					<source srcset="./images/hobby_images/paintings/still_life_book.webp">
-					<source srcset="./images/hobby_images/paintings/still_life_book.jpg">
-					<img src="./images/hobby_images/paintings/still_life_book.png" alt="still_life_book">
-				</picture>
-				<picture>
-					<source srcset="./images/hobby_images/paintings/still_life_fruits.webp">
-					<source srcset="./images/hobby_images/paintings/still_life_fruits.jpg">
-					<img src="./images/hobby_images/paintings/still_life_fruits.png" alt="still_life_fruits">
-				</picture>
-				<picture>
-					<source srcset="./images/hobby_images/paintings/still_life_glass.webp">
-					<source srcset="./images/hobby_images/paintings/still_life_glass.jpg">
-					<img src="./images/hobby_images/paintings/still_life_glass.png" alt="still_life_glass">
-				</picture>
-			</div>
+			</article>
+			<!-- Passion -->
+			<article class="passion" id="passion">
+				<h2>My Hobby</h2>
+				<div class="passion--container">
+					<!-- Sketching -->
+					<a href="./sketches.html" class="passion--item">
+						<picture>
+							<source srcset="./images/about_page/sketching/fairy.webp" />
+							<source srcset="./images/about_page/sketching/fairy.jpg" />
+							<img src="./images/about_page/sketching/fairy.png" alt="sketching" />
+						</picture>
+						<div class="passion--item-info">
+							<h3>Sketching</h3>
+						</div>
+					</a>
+					<!-- Photography -->
+					<a href="./photographs.html" class="passion--item">
+						<picture>
+							<source srcset="./images/about_page/photography/windy_monsoon_clouds_1.webp" />
+							<source srcset="./images/about_page/photography/windy_monsoon_clouds_1.jpg" />
+							<img src="./images/about_page/photography/windy_monsoon_clouds_1.png" alt="photography" />
+						</picture>
+						<div class="passion--item-info">
+							<h3>Photography</h3>
+						</div>
+					</a>
+				</div>
+			</article>
 		</div>
+	</main>
 
-	</section>
-	
-	    <!--Footer-->
-		<footer>
+	<!--Footer-->
+	<footer>
+		<div class="container">
 			<picture>
-			  <source srcset="./images/logo.webp" />
-			  <source srcset="./images/logo.jpg" />
-	  
-			  <img src="./images/logo.png" alt="AT Creations" />
+				<source srcset="./images/logo/logo.webp" />
+				<source srcset="./images/logo/logo.jpg" />
+
+				<img src="./images/logo/logo.png" alt="AT Creations" />
 			</picture>
 			<div class="options">
-			  <a href="./index.html"
-				><button class="btn">About</button></a
-			  >
-			  <a href="./uxDesigns.html"
-				><button class="btn">UX/UI Designs</button></a
-			  >
-			  <a href="./webCreation.html"
-				><button class="btn">Developments</button></a
-			  >
-			  <a href="./paintings.html"><button class="btn dark-highlight">Paintings</button></a>
-			  <a href="./sketches.html"><button class="btn">Sketches</button></a>
-			  <!-- <a href="./photographs.html"><button class="btn ">Photographs</button></a> -->
+				<a href="./index.html"><button class="btn">Home</button></a>
+				<a href="./work.html"><button class="btn">Work</button></a>
+				<a href="./about.html#passion"><button class="btn dark-highlight">Hobby</button></a>
+				<a href="./about.html"><button class="btn">About me</button></a>
 			</div>
 			<div class="social-links">
-			  <a
-				href="https://www.linkedin.com/in/tankita236/"
-				target="_blank"
-				class="linkedin"
-				><i class="fa fa-linkedin" aria-hidden="true"></i
-			  ></a>
-			  <a href="https://github.com/tankita236" target="_blank" class="git"
-				><i class="fa fa-github" aria-hidden="true"></i
-			  ></a>
-			</div>
-		  </footer>
-
+                <a href="https://www.linkedin.com/in/tankita236/" target="_blank" class="icon"><img src="./images/LinkedIN_black.png"></a>
+                <a href="https://www.behance.net/tankita236" target="_blank" class="icon"><img src="./images/iconmonstr-behance-1.png"></a>
+            </div>
+		</div>
+	</footer>
 
 	<!--Font awesosme-->
 	<script src="https://kit.fontawesome.com/7bc2a2c594.js" crossorigin="anonymous"></script>
+
 	<!--LInking my JS file-->
 	<script type="text/javascript" src="./js/app.js"></script>
 
